@@ -59,7 +59,7 @@ export default function Listen() {
 
                 <span className="font-['UnifrakturMaguntia']">released on</span> Gimmie Records<br/>
                 <span className="font-['UnifrakturMaguntia']">recorded &amp; mixed by </span> Luke Walsh<br/>
-                <span className="font-['UnifrakturMaguntia']">release date</span> October '22<br/>
+                <span className="font-['UnifrakturMaguntia']">release date</span> October &apos;22<br/>
                 <span className="font-['UnifrakturMaguntia']">album art </span> Pamela Rosel<br/><br/>
 
                 <span className="font-['UnifrakturMaguntia']">drums </span> Callum Galletly<br/>
@@ -68,7 +68,7 @@ export default function Listen() {
                 <span className="font-['UnifrakturMaguntia']">bass &amp; vocals</span> Shiv<br/><br/>
                 
                 <span className="font-['UnifrakturMaguntia']">SONGS</span><br/>
-                <span className="font-['UnifrakturMaguntia']">1</span> Creepin'<br/>
+                <span className="font-['UnifrakturMaguntia']">1</span> Creepin&apos;<br/>
                 <span className="font-['UnifrakturMaguntia']">2</span> Manila Pussy<br/>
                 <span className="font-['UnifrakturMaguntia']">3</span> Crystal Hog<br/>
                 <span className="font-['UnifrakturMaguntia']">4</span> Karaoke Song<br/>
