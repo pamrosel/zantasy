@@ -5,7 +5,6 @@ import CloseX from '../components/CloseX'
 import Loader from '../components/Loader'
 import Instructions from '../components/Instructions'
 import { motion } from 'framer-motion'
-import { NodeNextRequest } from 'next/dist/server/base-http/node'
 const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
 export default function Gallery() {
@@ -28,7 +27,7 @@ export default function Gallery() {
           animate={{ opacity: 1}}
           className='spline-bg'>
           <Suspense fallback={<Loader/>}>
-          <Spline scene="https://prod.spline.design/zgshkeLRxyjLCHtG/scene.splinecode" />
+            <Spline scene="https://prod.spline.design/zgshkeLRxyjLCHtG/scene.splinecode" />
           </Suspense>
         </motion.div>
 

@@ -6,9 +6,7 @@ import styles from '../styles/Home.module.css'
 import CloseX from '../components/CloseX'
 import Loader from '../components/Loader'
 import { motion } from 'framer-motion'
-import pMinDelay from "p-min-delay";
-// const Spline = lazy(() => import('@splinetool/react-spline'));
-const Spline = React.lazy(() => pMinDelay(import('@splinetool/react-spline'),2000));
+const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
 export default function About() {
 

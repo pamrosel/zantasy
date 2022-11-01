@@ -110,7 +110,7 @@ nav > ul li a h2 {
 
 h1 span {
   font-family: var(--spacemono);
-  font-size: 2vw;
+  font-size: 3vw;
   top: initial;
   left: initial;
   padding: 0 8px;
@@ -420,6 +420,10 @@ article > div > h3 > details[open] {
 
 
 @media (min-width: 600px) {
+
+  h1 span {
+    font-size: 2vw;
+  }
 
   h1 {
     font-size: 5.5vw;

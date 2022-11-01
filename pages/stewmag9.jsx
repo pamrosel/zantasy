@@ -31,7 +31,7 @@ export default function Stewmag9() {
       <CloseX/>
       
       <main className='page'>
-        <h1 className="text-[cornsilk]">The Stew #9 <span>words</span></h1>
+        <h1 className="text-[cornsilk]">The Stew #9<span>words</span></h1>
         <article>
           <motion.div
               initial={{ opacity: 0}}
