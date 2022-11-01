@@ -2,6 +2,7 @@ import React, { Suspense } from 'react'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import CloseX from '../components/CloseX'
+import Loader from '../components/Loader'
 import { motion } from 'framer-motion'
 const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
@@ -11,8 +12,8 @@ export default function Lipshitz() {
     <motion.div exit={{opacity:0}}>
       <div className={styles.container}>
         <Head>
-          <title>Lipshitz</title>
-          <meta name="description" content="Lipshitz Clip | Guppy Band Meanjin, Brisbane Australia" />
+          <title>GUPPY</title>
+          <meta name="description" content="Official clip for Lipshitz by Guppy, a band based in Meanjin, Brisbane Australia" />
           <link rel="icon" href="/favicon.ico" />
           <link rel="preconnect" href="https://www.youtube.com/" crossOrigin/>
           <link rel="dns-prefetch" href="https://www.youtube.com/" />
@@ -23,9 +24,8 @@ export default function Lipshitz() {
         <motion.div 
           initial={{ opacity: 0}}
           animate={{ opacity: 1}}
-          transition={{ delay: 3 }}
           className='spline-bg'>
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<Loader/>}>
             <Spline scene="https://prod.spline.design/eH0oVbAhsK9nY4iC/scene.splinecode" />
           </Suspense>
         </motion.div>
@@ -39,9 +39,10 @@ export default function Lipshitz() {
               initial={{ opacity: 0}}
               animate={{ opacity: 1}}>
               <details className='text-[#ffff00] border-[#ffff00]'>
-                <summary>Credits</summary>
-                <p>Directed by Pam Rosel</p>
+                <summary>Info</summary>
+                <p>Directed &amp; 3D Art by Pam Rosel</p>
                 <p>Filmed by Jack Mitchell</p>
+                <p><a href="https://gimmiezine.com/2021/12/10/guppy-premiere/" target='_blank' rel="noreferrer">Interview w/ Gimmie Zine</a></p>
               </details>
             </motion.div>
             <motion.div 

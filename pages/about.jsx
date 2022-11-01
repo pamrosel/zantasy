@@ -1,10 +1,14 @@
+// import React, { Suspense } from 'react'
 import React, { Suspense } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import CloseX from '../components/CloseX'
+import Loader from '../components/Loader'
 import { motion } from 'framer-motion'
-const Spline = React.lazy(() => import('@splinetool/react-spline'));
+import pMinDelay from "p-min-delay";
+// const Spline = lazy(() => import('@splinetool/react-spline'));
+const Spline = React.lazy(() => pMinDelay(import('@splinetool/react-spline'),2000));
 
 export default function About() {
 
@@ -29,9 +33,13 @@ export default function About() {
     <motion.div exit={{opacity:0}} className='bg-[#090B11]'>
       <div className={styles.container}>
         <Head>
-          <title>Guppy</title>
+          <title>GUPPY</title>
           <meta name="description" content="Guppy is Jack Mitchell, Callum Galletly, Mitchell Perkins and Pamela Rosel. We are a band based in Meanjin, Brisbane." />
           <link rel="icon" href="/favicon.ico" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+          <link rel="manifest" href="/site.webmanifest" />
           <link rel="preconnect" href="https://prod.spline.design" crossOrigin/>
           <link rel="dns-prefetch" href="https://prod.spline.design" />
         </Head>
@@ -39,11 +47,10 @@ export default function About() {
         <motion.div 
           initial={{ opacity: 0}}
           animate={{ opacity: 1}}
-          transition={{ delay: 3 }}
-          className='h-[80vh]'>
-          <Suspense fallback={<div><h1>Loading...</h1></div>}>
+          className='h-[80vh] w-full flex items-center justify-center'>
+          <Suspense fallback={<Loader/>}>
             <Spline className='overflow-y-hidden' scene="https://prod.spline.design/nb2X7ylAaQZv0zRx/scene.splinecode" />
-          </Suspense>
+          </Suspense> 
         </motion.div>
 
         <CloseX/>
@@ -51,7 +58,7 @@ export default function About() {
         <div className="relative mt-[-10vh] h-[10vh] bg-gradient-to-b from-transparent to-[#090B11]"></div>
 
         <main className='page-about'>
-          <h1 className="text-[#FFFFFF]">GUPPY <span>about</span></h1>
+          <h1 className="text-[#FFFFFF]">GUPPY<span>about</span></h1>
           <article className='mt-[-5vh] mb-[15vh]' >
             <motion.div 
               initial={{ opacity: 0}}

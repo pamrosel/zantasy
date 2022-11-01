@@ -2,6 +2,8 @@ import React, { Suspense } from 'react'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import CloseX from '../components/CloseX'
+import Loader from '../components/Loader'
+import Instructions from '../components/Instructions'
 import { motion } from 'framer-motion'
 const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
@@ -11,9 +13,13 @@ export default function Crystalhoglive() {
     <motion.div exit={{opacity:0}}>
       <div className={styles.container}>
         <Head>
-          <title>Crystal Hog live</title>
-          <meta name="description" content="Crystal Hog Live" />
+          <title>GUPPY</title>
+          <meta name="description" content="Guppy plays Crystal Hog live under a house in Windsor on New Years Eve 2020." />
           <link rel="icon" href="/favicon.ico" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+          <link rel="manifest" href="/site.webmanifest" />
           <link rel="preconnect" href="https://www.youtube.com/" crossOrigin/>
           <link rel="dns-prefetch" href="https://www.youtube.com/" />
           <link rel="preconnect" href="https://prod.spline.design" crossOrigin/>
@@ -23,9 +29,8 @@ export default function Crystalhoglive() {
         <motion.div 
           initial={{ opacity: 0}}
           animate={{ opacity: 1}}
-          transition={{ delay: 3 }}
           className='spline-bg'>
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<Loader/>}>
             <Spline scene="https://prod.spline.design/ue7RpF11FuHt7jFU/scene.splinecode" />
           </Suspense>
         </motion.div>
@@ -52,6 +57,7 @@ export default function Crystalhoglive() {
             </motion.div>
           </article>
         </main>
+        <Instructions/>
       </div>
     </motion.div>
   )

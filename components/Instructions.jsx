@@ -12,7 +12,6 @@ const Instructions = () => {
       <p className='md:hidden'>pinch zoom</p>
       <p className='md:hidden'>2 finger rotate</p>
       <p className='md:hidden'>3 finger move</p>
-    
     </motion.div>
   )
 }

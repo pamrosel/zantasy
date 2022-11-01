@@ -65,7 +65,10 @@ html.is-animating .transition-fade {
   position: fixed;
   width: 100vw;
   height: 100vh;
+  align-items: center;
+  justify-content: center;
   overflow-x: hidden;
+  display: flex;
 }
 
 h1 {
@@ -108,7 +111,8 @@ nav > ul li a h2 {
 h1 span {
   font-family: var(--spacemono);
   font-size: 2vw;
-  top: auto;
+  top: initial;
+  left: initial;
   padding: 0 8px;
   letter-spacing: -.01em;
   position: absolute;
@@ -145,6 +149,7 @@ nav h1:hover {
   margin: 2px;
   font-family: 'Space Mono';
   transition: all .2s;
+  mix-blend-mode: difference;
 }
 
 .socials:hover {
@@ -167,7 +172,6 @@ nav h1:hover {
   padding: 1rem;
 }
 
-
 @keyframes shine {
   to {
     background-position: -200% center;
@@ -180,6 +184,7 @@ nav h1:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-y: hidden;
 }
 
 .page-btm {
@@ -231,11 +236,78 @@ article {
   -webkit-text-fill-color: transparent;
   animation: shine 6s linear infinite;
   font-family: 'Arial';
-  position: fixed;
+  position: absolute;
   bottom: 15px;
   left: 15px;
   z-index: 20;
   opacity: .8;
+}
+
+.loading {
+  background: linear-gradient(to right, rgb(69, 69, 69) 20%, rgb(255, 255, 255) 40%, rgb(255, 255, 255) 60%, rgb(69, 69, 69) 80%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 6s linear infinite;
+  font-family: 'Arial';
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
 }
 
 article > div > details {
@@ -245,12 +317,13 @@ article > div > details {
   font-family: 'Space Mono';
   border: 1.2px solid white;
   border-radius: 64px;
-  width: min-content;
+  width: auto;
   mix-blend-mode: normal;
   font-size: .8em;
   text-transform: uppercase;
   overflow: hidden;
   line-height: 1.25em;
+  z-index: 40;
 }
 
 article > div > details summary {
@@ -270,6 +343,7 @@ article > div > details[open] summary ~ * {
 
 article > div > details[open] {
   background-color: #191919;
+  width: min-content;
 }
 
 article > div > details a {
@@ -360,7 +434,7 @@ article > div > h3 > details[open] {
   }
 
   article > div > h3 {
-    font-size: 3vw;
+    font-size: 3.1vw;
   }
 
   nav > ul li a h1 {
@@ -372,7 +446,6 @@ article > div > h3 > details[open] {
   article {
     width: 50%;
   }
-
 
   article > div > details summary {
     padding: 2em;
@@ -387,8 +460,4 @@ article > div > h3 > details[open] {
     100%  {opacity: 1; margin-bottom: 0px; padding: 2em}
   }
 
-  .a-container {
-    width: 33%;
-    font-size: 1.15em;
-  }
 }

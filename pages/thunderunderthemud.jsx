@@ -2,6 +2,7 @@ import React, { Suspense } from 'react'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import CloseX from '../components/CloseX'
+import Loader from '../components/Loader'
 import { motion } from 'framer-motion'
 const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
@@ -11,8 +12,8 @@ export default function ThunderUnder() {
     <motion.div exit={{opacity:0}}>
       <div className={styles.container}>
         <Head>
-          <title>Thunder Under the Mud</title>
-          <meta name="description" content="Thunder Under The Mud Clip by Guppy" />
+          <title>GUPPY</title>
+          <meta name="description" content="Official clip for Thunder Under the Mud by Guppy, a band based in Meanjin, Brisbane Australia." />
           <link rel="icon" href="/favicon.ico" />
           <link rel="preconnect" href="https://www.youtube.com/" crossOrigin/>
           <link rel="dns-prefetch" href="https://www.youtube.com/" />
@@ -23,9 +24,8 @@ export default function ThunderUnder() {
         <motion.div 
           initial={{ opacity: 0}}
           animate={{ opacity: 1}}
-          transition={{ delay: 3 }}
           className='spline-bg'>
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<Loader/>}>
             <Spline scene="https://prod.spline.design/vQC9OYyio0xlFaNe/scene.splinecode" />
           </Suspense>
         </motion.div>
@@ -33,15 +33,14 @@ export default function ThunderUnder() {
         <CloseX/>
         
         <main className='page'>
-          <h1 className="text-[#7bffb0]">Thunder Under the Mud <span>clip</span></h1>
+          <h1 className="text-[#7bffb0]">Thunder Under the Mud<span>clip</span></h1>
           <article>
             <motion.div
               initial={{ opacity: 0}}
               animate={{ opacity: 1}}>
               <details className='text-[#7bffb0] border-[#7bffb0]'>
                   <summary>info</summary>
-                  <p>Directed by Jack Mitchell</p>
-                  <p>Filmed by Glen Schenau</p>
+                  <p>Filmed by Glen Schenau &amp; Jack Mitchell</p>
               </details>
             </motion.div>
             <motion.div 
