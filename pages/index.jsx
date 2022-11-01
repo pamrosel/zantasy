@@ -16,7 +16,7 @@ export default function Home() {
   const fadeInUp = {
     initial: {
       y: 60,
-      opacity: 0
+      opacity: 0,
     }, 
     animate: {
       y: 0,
@@ -37,7 +37,7 @@ export default function Home() {
   }
 
   return (
-    <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate' className={styles.container}>
+    <motion.div exit={{ opacity: 0, y: -60, transition: {duration: .6, ease: easing}}} initial='initial' animate='animate' className={styles.container}>
       <Head>
         <title>GUPPY</title>
         <meta name="description" content="WELCOME TO DA GUPPY WEBSITE! Guppy is a band based in Meanjin, Brisbane. This site contains 3D content. Click around, explore, be patient." />
