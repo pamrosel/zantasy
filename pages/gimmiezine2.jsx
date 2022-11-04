@@ -14,6 +14,7 @@ export default function Gimmiezine2() {
         <Head>
           <title>GUPPY</title>
           <meta name="description" content="Bianca from Gimmie Gimmie Gimmie Zine interviewed each member of Guppy and featured us on the cover of their second issue. Here are some excerpts from those interviews." />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
           <link rel="icon" href="/favicon.ico" />
           <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />

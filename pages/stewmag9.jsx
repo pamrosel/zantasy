@@ -14,6 +14,7 @@ export default function Stewmag9() {
       <div className={styles.container}>
         <Head>
           <title>GUPPY</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
           <meta name="description" content="A lil feature about Guppy in The Stew magazine issue 9." />
           <link rel="icon" href="/favicon.ico" />
           <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />

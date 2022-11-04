@@ -40,8 +40,8 @@ export default function Home() {
     <motion.div exit={{ opacity: 0, y: -60, transition: {duration: .6, ease: easing}}} initial='initial' animate='animate' className={styles.container}>
       <Head>
         <title>GUPPY</title>
-        <meta name="description" content="WELCOME TO DA GUPPY WEBSITE! Guppy is a band based in Meanjin, Brisbane. This site contains 3D content. Click around, explore, be patient." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="description" content="WELCOME TO DA GUPPY WEBSITE! Guppy is a band based in Meanjin, Brisbane. This site contains 3D content. Click around, explore, be patient." />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />

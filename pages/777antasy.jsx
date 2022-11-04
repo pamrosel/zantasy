@@ -14,6 +14,7 @@ export default function Listen() {
       <div className={styles.container}>
         <Head>
           <title>GUPPY</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
           <meta name="description" content="777antasy as in like 'zan-ta-see' by Guppy is their first album, now released on vinyl by Gimmie Records, recorded and mixed by Luke Walsh. Songs include Creepin, Manila Pussy, Crystal Hog, Karaoke Song, Thunder Under the Mud, Lipshitz and Spirit." />
           <link rel="icon" href="/favicon.ico" />
           <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>

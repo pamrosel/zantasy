@@ -14,6 +14,7 @@ export default function Gallery() {
       <div className={styles.container}>
         <Head>
           <title>GUPPY</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
           <meta name="description" content="Do not enter via the Rooftop Gallery!" />
           <link rel="icon" href="/favicon.ico" />
           <link rel="preconnect" href="https://www.youtube.com/" crossOrigin/>

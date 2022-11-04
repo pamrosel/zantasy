@@ -13,6 +13,7 @@ export default function ThunderUnder() {
       <div className={styles.container}>
         <Head>
           <title>GUPPY</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
           <meta name="description" content="Official clip for Thunder Under the Mud by Guppy, a band based in Meanjin, Brisbane Australia." />
           <link rel="icon" href="/favicon.ico" />
           <link rel="preconnect" href="https://www.youtube.com/" crossOrigin/>

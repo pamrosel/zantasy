@@ -33,6 +33,7 @@ export default function About() {
         <Head>
           <title>GUPPY</title>
           <meta name="description" content="Guppy is Jack Mitchell, Callum Galletly, Mitchell Perkins and Pamela Rosel. We are a band based in Meanjin, Brisbane." />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
           <link rel="icon" href="/favicon.ico" />
           <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
