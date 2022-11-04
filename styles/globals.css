@@ -33,7 +33,6 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
   background-color: #191919;
-  width: 100vw;
   min-height: 100vh;
   min-height: -webkit-fill-available;
 }
@@ -114,6 +113,7 @@ nav > ul li a h2 {
   position: fixed;
   top: 15px;
   left: 10px;
+  font-size: 6vw;
 }
 
 h1 span {
