@@ -68,7 +68,7 @@ export default function About() {
               <details><summary>mitch</summary>
               <span>ell perkins: 4 stringer & vox 🎸 also in <a href="https://kitchensfloor.bandcamp.com/" target='_blank' rel="noreferrer">Kitchen&apos;s Floor</a>, ex Clever/Cured Pink/Per Purpose/Psy Ants</span></details>,&nbsp;
               <details><summary>jack</summary>
-              <span>&nbsp;mitchell: evil lisa simpson 🎷 effectrix 🔊 & vox, aka Redder (solo), ex CDIQ (Come Die in QLD), paints the demons</span></details>,&nbsp;
+              <span>&nbsp;mitchell: evil lisa simpson 🎷 effectrix 🔊 & vox, aka Redder (solo), ex CDIQ (Come Die in QLD)</span></details>,&nbsp;
               <details><summary>cal</summary>
               <span>lum galletly: shiva the drummer 🥁 aka &apos;DJ Set&apos; 👾 also in <a href="https://soundcloud.com/eggvein" target='_blank' rel="noreferrer">∑gg√e|n</a>, Weekend Immendorff, ex Clever/Black Deity/Angel Baby</span></details>&nbsp;&&nbsp;
               <details><summary>pam</summary>

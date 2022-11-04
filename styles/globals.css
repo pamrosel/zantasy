@@ -363,6 +363,10 @@ article > div > h3 {
   display: inline;
 }
 
+details summary::-webkit-details-marker {
+  display: none;
+}
+
 article > div > h3 > details {
   display: inline;
   transition: all .1s;
