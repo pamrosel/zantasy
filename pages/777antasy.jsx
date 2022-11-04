@@ -33,13 +33,13 @@ export default function Listen() {
         <motion.div 
           initial={{ opacity: 0}}
           animate={{ opacity: 1}}
-          className='h-[80vh] w-full flex items-center justify-center'>
+          className='h-[100vw] md:h-[80vh] w-full flex items-center justify-center'>
           <Suspense fallback={<Loader/>}>
             <Spline scene="https://prod.spline.design/sPQ9qgMM2IW9o24r/scene.splinecode" />
           </Suspense>
         </motion.div>
 
-        <div className="relative mt-[-10vh] h-[10vh] bg-gradient-to-b from-transparent to-[#191919]"></div>
+        <div className="relative mt-[-100px] h-[100px] bg-gradient-to-b from-transparent to-[#191919]"></div>
         
         <main className='page-about'>
           <h1 className="text-[#4a4dff]">777antasy<span>listen/buy</span></h1>
