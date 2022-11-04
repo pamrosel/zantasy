@@ -45,7 +45,7 @@ export default function About() {
         <motion.div 
           initial={{ opacity: 0}}
           animate={{ opacity: 1}}
-          className='h-[80vh] w-full flex items-center justify-center'>
+          className='h-[100vw] md:h-[80vh] w-full flex items-center justify-center'>
           <Suspense fallback={<Loader/>}>
             <Spline className='overflow-y-hidden' scene="https://prod.spline.design/nb2X7ylAaQZv0zRx/scene.splinecode" />
           </Suspense> 
@@ -53,11 +53,11 @@ export default function About() {
 
         <CloseX/>
 
-        <div className="relative mt-[-10vh] h-[10vh] bg-gradient-to-b from-transparent to-[#090B11]"></div>
+        <div className="relative mt-[-100px] h-[100px] bg-gradient-to-b from-transparent to-[#090B11]"></div>
 
         <main className='page-about'>
           <h1 className="text-[#FFFFFF]">GUPPY<span>about</span></h1>
-          <article className='mt-[-5vh] mb-[15vh]' >
+          <article className='mt-[-25px] mb-[100px] md:mb-[15vh]' >
             <motion.div 
               initial={{ opacity: 0}}
               animate={{ opacity: 1}}

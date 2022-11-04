@@ -52,7 +52,7 @@ export default function Listen() {
                 <Stream/>
             </motion.div>
 
-            <motion.div className='mt-[7vh] mb-[15vh] p-[15px] md:p-0'>
+            <motion.div className='mt-[25px] mb-[100px] md:mb-[15vh] p-[15px] md:p-0'>
               <h3 className="text-[#4a4dff]">
                 <details className="text-[#FFF]"><summary><a href="https://gimmiezine.bandcamp.com/album/777antasy" target='_blank' rel="noreferrer">BUY THE ALBUM</a></summary></details>
                 <br/><br/>
@@ -65,7 +65,7 @@ export default function Listen() {
                 <span className="font-['UnifrakturMaguntia']">drums </span> Callum Galletly<br/>
                 <span className="font-['UnifrakturMaguntia']">sax, effects &amp; vocals </span> Jack Mitchell<br/>
                 <span className="font-['UnifrakturMaguntia']">vocals &amp; toys</span> Pamela Rosel<br/>
-                <span className="font-['UnifrakturMaguntia']">bass &amp; vocals</span> Shiv<br/><br/>
+                <span className="font-['UnifrakturMaguntia']">bass &amp; vocals</span> Mitchell Perkins<br/><br/>
                 
                 <span className="font-['UnifrakturMaguntia']">SONGS</span><br/>
                 <span className="font-['UnifrakturMaguntia']">1</span> Creepin&apos;<br/>
