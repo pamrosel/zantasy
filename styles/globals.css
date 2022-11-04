@@ -244,7 +244,7 @@ article {
   -webkit-text-fill-color: transparent;
   animation: shine 6s linear infinite;
   font-family: 'Arial';
-  position: absolute;
+  position: fixed;
   bottom: 15px;
   left: 15px;
   z-index: 20;
@@ -337,11 +337,13 @@ article > div > details {
 article > div > details summary {
   padding: 1.5em;
   cursor: pointer;
+  text-align: center;
 }
 
 article > div > details[open] summary ~ * {
   animation: credits .5s ease-in-out;
   padding: 1.5em;
+  text-align: center;
 }
 
 @keyframes credits {
@@ -389,27 +391,28 @@ article > div > h3 > details > span a, article > div > h3 > details > span Link 
   color: rgb(249, 138, 255);
   border: 1px solid rgb(249, 138, 255);
   border-radius: 1em;
-  padding: 0 .5em;
+  padding: 5px .5em;
   font-family: 'Space Mono';
   font-size: .8em;
-  display: inline-block;
 }
 
 article > div > h3 > details > span a:hover {
   background-color: rgb(249, 138, 255);
+  border: 1px solid rgb(249, 138, 255);
   color: #090B11;
   cursor: pointer;
 }
 
-article > div > h3 > details > summary {
+article > div > h3 > details > summary, h3 a {
   display: inline;
   border: solid 1px white;
   border-radius: 1em;
   transition: all .1s;
+  color: white;
   padding: 0 3px;
 }
 
-article > div > h3 > details > summary:hover {
+article > div > h3 > details > summary:hover, h3 a:hover {
   display: inline;
   border: solid 1px yellow;
   transform: skewY(5deg) scaleX(1);
@@ -420,6 +423,7 @@ article > div > h3 > details > summary:hover {
 
 article > div > h3 > details[open] > summary {
   border: none;
+  color: yellow;
 }
 
 article > div > h3 > details[open] {
@@ -450,7 +454,7 @@ article > div > h3 > details[open] {
   }
 
   article > div > h3 {
-    font-size: 3.1vw;
+    font-size: 3vw;
   }
 
   nav > ul li a h1 {

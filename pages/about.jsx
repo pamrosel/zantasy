@@ -70,8 +70,8 @@ export default function About() {
               <span>ell perkins: 4 stringer & vox 🎸 also in <a href="https://kitchensfloor.bandcamp.com/" target='_blank' rel="noreferrer">Kitchen&apos;s Floor</a>, ex Clever/Cured Pink/Per Purpose/Psy Ants</span></details>,&nbsp;
               <details><summary>jack</summary>
               <span>&nbsp;mitchell: evil lisa simpson 🎷 effectrix 🔊 & vox, aka Redder (solo), ex CDIQ (Come Die in QLD)</span></details>,&nbsp;
-              <details><summary>cal</summary>
-              <span>lum galletly: shiva the drummer 🥁 aka &apos;DJ Set&apos; 👾 also in <a href="https://soundcloud.com/eggvein" target='_blank' rel="noreferrer">∑gg√e|n</a>, Weekend Immendorff, ex Clever/Black Deity/Angel Baby</span></details>&nbsp;&&nbsp;
+              <details><summary>callum</summary>
+              <span> galletly: shiva the drummer 🥁 aka &apos;DJ Set&apos; 👾 also in <a href="https://soundcloud.com/eggvein" target='_blank' rel="noreferrer">∑gg√e|n</a>, Weekend Immendorff, ex Clever/Black Deity/Baby Angel</span></details>&nbsp;&&nbsp;
               <details><summary>pam</summary>
               <span>ela rosel: vocal pulverizer 🎤, kazoo, cowbell, xylophone, toy-etcetera 🧸 aka  <a href="https://www.instagram.com/queena_grot/" target='_blank' rel="noreferrer">Queena Grot🔮✨</a></span></details>&nbsp;
               pulling in their own direction
@@ -90,7 +90,9 @@ export default function About() {
               <br/><br/>
               To get in contact, the best way is to message us on 
               &nbsp;<details><summary>instagram</summary><span>&nbsp;<a href="https://www.instagram.com/itsguppybaby/" target='_blank' rel="noreferrer">@itsguppybaby</a></span></details>&nbsp; or if you&apos;re patient you can send us an&nbsp;
-              <details><summary>email</summary><span>&nbsp;to<a href="mailto:itsguppybaby@gmail.com">itsguppybaby@gmail.com</a></span></details>. This fancy website was made by <details>&nbsp;<summary>Lola Digital</summary><span>loladigital@gmail.com</span></details>. 
+              <details><summary>email</summary><span>&nbsp;to<a href="mailto:itsguppybaby@gmail.com">itsguppybaby@gmail.com</a></span></details>.<br/><br/>
+              
+              This fancy website was made by <details>&nbsp;<summary>Lola Digital</summary><span>loladigital@gmail.com</span></details>. 
               <br/><br/>
               
               </h3>

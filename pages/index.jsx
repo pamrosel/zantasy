@@ -73,10 +73,10 @@ export default function Home() {
               <p className='acknowledgement'>Guppy is a band based in Meanjin, Brisbane. We recognize the ongoing connection that the Jagera and Turrbal nations have to this land, waters and spirit. Sovereignty was never ceded and we stand in solidarity with them.
               </p>
             </motion.li>
-            <motion.li variants={fadeInUp}>
+            {/* <motion.li variants={fadeInUp}>
               <p className='text-[white] blur-[4px] transition duration-150 ease-out hover:blur-0 scale-y-[8] hover:scale-y-[4]'>
               👽 Site by Lola Digital © 2022</p>
-            </motion.li>
+            </motion.li> */}
           </motion.ul>
         </nav>
       </main>

@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import CloseX from '../components/CloseX'
 import Loader from '../components/Loader'
@@ -55,7 +56,7 @@ export default function Listen() {
 
             <motion.div className='mt-[25px] mb-[100px] md:mb-[15vh] p-[15px] md:p-0'>
               <h3 className="text-[#4a4dff]">
-                <details className="text-[#FFF]"><summary><a href="https://gimmiezine.bandcamp.com/album/777antasy" target='_blank' rel="noreferrer">BUY THE ALBUM</a></summary></details>
+                <a href="https://gimmiezine.bandcamp.com/album/777antasy" target='_blank' rel="noreferrer">BUY THE ALBUM</a>
                 <br/><br/>
 
                 <span className="font-['UnifrakturMaguntia']">released on</span> Gimmie Records<br/>
@@ -73,8 +74,11 @@ export default function Listen() {
                 <span className="font-['UnifrakturMaguntia']">2</span> Manila Pussy<br/>
                 <span className="font-['UnifrakturMaguntia']">3</span> Crystal Hog<br/>
                 <span className="font-['UnifrakturMaguntia']">4</span> Karaoke Song<br/>
-                <span className="font-['UnifrakturMaguntia']">5</span> Thunder Under the Mud<br/>
-                <span className="font-['UnifrakturMaguntia']">6</span> Lipshitz<br/>
+                <span className="font-['UnifrakturMaguntia']">5</span> Thunder Under the Mud&nbsp;
+                <Link href="/thunderunderthemud"><a className='text-[#4a4dff] border-[#4a4dff]'>clip</a></Link>
+                <br/>
+                <span className="font-['UnifrakturMaguntia']">6</span> Lipshitz&nbsp;
+                <Link href="/lipshitz"><a className='text-[#4a4dff] border-[#4a4dff]'>clip</a></Link><br/>
                 <span className="font-['UnifrakturMaguntia']">7</span> Spirit
               </h3>
             </motion.div>
