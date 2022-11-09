@@ -49,7 +49,7 @@ export default function Home() {
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
       
-      <main className='flex items-center h-[100vh]'>
+      <main className='flex items-center h-[100vh] overflow-y-hidden'>
         <nav>
           <motion.ul variants={stagger}>
             <motion.li variants={fadeInUp}><Link href="/about"><a><h1 className="text-[white] hover:bg-[white] scale-y-[2]"><blockquote className='scale-y-[2]'>GUPPY</blockquote> <span>about</span></h1></a></Link></motion.li>
@@ -70,7 +70,9 @@ export default function Home() {
               <a href="mailto:itsguppybaby@gmail.com" className='socials'>Email</a>
             </motion.li>
             <motion.li variants={fadeInUp} className='text-[1em] w-[66%] md:text-[1.15em] md:w-[33%]'>
-              <p className='acknowledgement'>Guppy is a band based in Meanjin, Brisbane. We recognize the ongoing connection that the Jagera and Turrbal nations have to this land, waters and spirit. Sovereignty was never ceded and we stand in solidarity with them.
+              <p className='acknowledgement'>
+
+                Peugot 4WDs choke the tracks around a new casino no one asked for, built on the graves of mangroves. We're a band on stolen Jagera and Turrbal land. Guppy stands in solidarity with indigenous owners and their ongoing connection to land, waters and spirit of the greater Meanjin, Brisbane area. 
               </p>
             </motion.li>
             {/* <motion.li variants={fadeInUp}>

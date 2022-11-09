@@ -437,12 +437,16 @@ article > div > h3 > details[open] {
 
 @media (min-width: 600px) {
 
+  .acknowledgement {
+    font-size: 1.45vw;
+  }
+
   h1 span {
     font-size: 2vw;
   }
 
   h1 {
-    font-size: 5.5vw;
+    font-size: 5.15vw;
   }
 
   .socials {
@@ -478,6 +482,18 @@ article > div > h3 > details[open] {
   @keyframes credits {
     0%    {opacity: 0; margin-bottom: -100px; padding: 0em}
     100%  {opacity: 1; margin-bottom: 0px; padding: 2em}
+  }
+
+}
+
+@media (min-width: 1900px) {
+
+  h1 {
+    font-size: 4.9vw;
+  }
+
+  .acknowledgement {
+    font-size: 2em;
   }
 
 }
