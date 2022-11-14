@@ -72,12 +72,12 @@ export default function Home() {
             <motion.li variants={fadeInUp} className='text-[1em] w-[66%] md:text-[1.15em] md:w-[33%]'>
               <p className='acknowledgement'>
 
-                Peugot 4WDs choke the tracks around a new casino no one asked for, built on the graves of mangroves. We're a band on stolen Jagera and Turrbal land. Guppy stands in solidarity with indigenous owners and their ongoing connection to land, waters and spirit of the greater Meanjin, Brisbane area. 
+                Peugot 4WDs choke the tracks around a new casino no one asked for, built on the graves of mangroves. We&apos;re a band on stolen Jagera and Turrbal land. Guppy stands in solidarity with indigenous owners and their ongoing connection to land, waters and spirit of the greater Meanjin, Brisbane area. 
               </p>
             </motion.li>
             {/* <motion.li variants={fadeInUp}>
-              <p className='text-[white] blur-[4px] transition duration-150 ease-out hover:blur-0 scale-y-[8] hover:scale-y-[4]'>
-              👽 Site by Lola Digital © 2022</p>
+              <p className='text-[grey] blur-[4px] transition duration-150 ease-out hover:blur-0 scale-y-[4] hover:scale-y-[4]'>
+              👽 Site by Lola Digital</p>
             </motion.li> */}
           </motion.ul>
         </nav>
