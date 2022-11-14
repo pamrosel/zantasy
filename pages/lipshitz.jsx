@@ -55,6 +55,7 @@ export default function Lipshitz() {
             </motion.div>
           </article>
         </main>
+        <Instructions/>
       </div>
     </motion.div>
   )

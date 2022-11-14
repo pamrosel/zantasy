@@ -53,6 +53,7 @@ export default function ThunderUnder() {
             </motion.div>
           </article>
         </main>
+        <Instructions/>
       </div>
     </motion.div>
   )
