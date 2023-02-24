@@ -1,15 +1,9 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { useInView } from "react-intersection-observer";
 import { motion } from 'framer-motion'
 import Link from 'next/link';
 
 export default function Home() {
-
-  // intersection observer
-  const { ref, inView } = useInView({
-    threshold: 1
-  });
 
   const easing = [.6, -.05, .01, .99]
 
@@ -57,11 +51,10 @@ export default function Home() {
             <motion.li variants={fadeInUp}><Link href="/codependentblueslive"><a><h1 className="text-[#aa65ff] hover:bg-[#aa65ff]">Codependent Blues<span>live</span></h1></a></Link></motion.li>
             <motion.li variants={fadeInUp}><Link href="/stewmag9"><a><h1 className="text-[cornsilk] hover:bg-[cornsilk]">The Stew #9<span>words</span></h1></a></Link></motion.li>
             <motion.li variants={fadeInUp}><Link href="/gimmiezine2"><a><h1 className="text-[#ffc5e8] hover:bg-[#ffc5e8]">Gimmie Zine #2<span>words</span></h1></a></Link></motion.li>
-            <motion.li variants={fadeInUp} ref={ref}><Link href="/crystalhoglive"><a><h1 className="text-[#FF0000] hover:bg-[#FF0000]">Crystal Hog Live<span>live</span></h1></a></Link></motion.li>
+            <motion.li variants={fadeInUp}><Link href="/crystalhoglive"><a><h1 className="text-[#FF0000] hover:bg-[#FF0000]">Crystal Hog<span>houseshow</span></h1></a></Link></motion.li>
             <motion.li variants={fadeInUp}><Link href="/lipshitz"><a><h1 className="text-[#ffff00] hover:bg-[#ffff00]">Lipshitz👄<span>clip</span></h1></a></Link></motion.li>
-            <motion.li variants={fadeInUp}><Link href="/creepinlive"><a><h1 className="text-[#ffe5ce] hover:bg-[#ffe5ce]">Creepin&apos;<span>live</span></h1></a></Link></motion.li>
-            <motion.li variants={fadeInUp}><Link href="/rooftile"><a><h1 className="text-[#ff622b] hover:bg-[#ff622b]">Do Not Enter !<span>roof</span></h1></a></Link></motion.li>
-            <motion.li variants={fadeInUp}><Link href="/hottunalive"><a><h1 className="text-[#4cff46] hover:bg-[#4cff46]">Hot Tuna<span>live</span></h1></a></Link></motion.li>
+            {/* <motion.li variants={fadeInUp}><Link href="/creepinlive"><a><h1 className="text-[#ffe5ce] hover:bg-[#ffe5ce]">Creepin&apos;<span>live</span></h1></a></Link></motion.li> */}
+            <motion.li variants={fadeInUp}><Link href="/hottunalive"><a><h1 className="text-[#4cff46] hover:bg-[#4cff46]">Boys Boys Boys<span>houseshow</span></h1></a></Link></motion.li>
             <motion.li variants={fadeInUp}><Link href="/thunderunderthemud"><a><h1 className="text-[#7bffb0] hover:bg-[#7bffb0]">Thunder Under the Mud<span>clip</span></h1></a></Link></motion.li>
             <motion.li variants={fadeInUp}>
               <a href="https://www.instagram.com/itsguppybaby/" className='socials' target='_blank' rel="noreferrer">Instagram</a>

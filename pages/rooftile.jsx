@@ -23,11 +23,13 @@ export default function Gallery() {
           <link rel="dns-prefetch" href="https://prod.spline.design" />
         </Head>
 
+        <Loader />
+
         <motion.div 
           initial={{ opacity: 0}}
           animate={{ opacity: 1}}
           className='spline-bg'>
-          <Suspense fallback={<Loader/>}>
+          <Suspense>
             <Spline scene="https://prod.spline.design/zgshkeLRxyjLCHtG/scene.splinecode" />
           </Suspense>
         </motion.div>

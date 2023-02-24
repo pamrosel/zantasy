@@ -25,15 +25,16 @@ export default function Stewmag9() {
           <link rel="dns-prefetch" href="https://prod.spline.design" />
         </Head>
 
+        <Loader />
         
-          <Suspense fallback={<Loader/>}>
-            <motion.div
-            initial={{ opacity: 0}}
-            animate={{ opacity: 1}}
-            className='spline-bg'>
-            <Spline scene="https://prod.spline.design/9mtOMBAu270nGQZM/scene.splinecode" />
-            </motion.div>
-          </Suspense>
+        <Suspense>
+          <motion.div
+          initial={{ opacity: 0}}
+          animate={{ opacity: 1}}
+          className='spline-bg'>
+          <Spline scene="https://prod.spline.design/9mtOMBAu270nGQZM/scene.splinecode" />
+          </motion.div>
+        </Suspense>
        
 
         <CloseX/>

@@ -30,13 +30,14 @@ export default function Listen() {
           <link rel="dns-prefetch" href="https://prod.spline.design" />
         </Head>
 
+        <Loader />
         <CloseX/>
 
         <motion.div 
           initial={{ opacity: 0}}
           animate={{ opacity: 1}}
           className='h-[100vw] md:h-[80vh] w-full flex items-center justify-center'>
-          <Suspense fallback={<Loader/>}>
+          <Suspense>
             <Spline scene="https://prod.spline.design/sPQ9qgMM2IW9o24r/scene.splinecode" />
           </Suspense>
         </motion.div>

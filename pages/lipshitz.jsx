@@ -3,6 +3,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import CloseX from '../components/CloseX'
 import Loader from '../components/Loader'
+import Instructions from '../components/Instructions'
 import { motion } from 'framer-motion'
 const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
@@ -22,11 +23,13 @@ export default function Lipshitz() {
           <link rel="dns-prefetch" href="https://prod.spline.design" />
         </Head>
 
+        <Loader />
+
         <motion.div 
           initial={{ opacity: 0}}
           animate={{ opacity: 1}}
           className='spline-bg'>
-          <Suspense fallback={<Loader/>}>
+          <Suspense>
             <Spline scene="https://prod.spline.design/eH0oVbAhsK9nY4iC/scene.splinecode" />
           </Suspense>
         </motion.div>
