@@ -7,7 +7,7 @@ import Instructions from '../components/Instructions'
 import { motion } from 'framer-motion'
 const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
-export default function Hottunalive() {
+export default function BoysBoysBoysLive() {
 
   return (
     <motion.div exit={{opacity:0}}>
@@ -41,7 +41,7 @@ export default function Hottunalive() {
         <CloseX/>
         
         <main className='page'>
-          <h1 className="text-[#4cff46]">Hot Tuna<span>live</span></h1>
+          <h1 className="text-[#4cff46]">BoysBoysBoys<span>houseshow</span></h1>
           <article>
             <motion.div
               initial={{ opacity: 0}}

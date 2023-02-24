@@ -54,7 +54,7 @@ export default function Home() {
             <motion.li variants={fadeInUp}><Link href="/crystalhoglive"><a><h1 className="text-[#FF0000] hover:bg-[#FF0000]">Crystal Hog<span>houseshow</span></h1></a></Link></motion.li>
             <motion.li variants={fadeInUp}><Link href="/lipshitz"><a><h1 className="text-[#ffff00] hover:bg-[#ffff00]">Lipshitz👄<span>clip</span></h1></a></Link></motion.li>
             {/* <motion.li variants={fadeInUp}><Link href="/creepinlive"><a><h1 className="text-[#ffe5ce] hover:bg-[#ffe5ce]">Creepin&apos;<span>live</span></h1></a></Link></motion.li> */}
-            <motion.li variants={fadeInUp}><Link href="/hottunalive"><a><h1 className="text-[#4cff46] hover:bg-[#4cff46]">Boys Boys Boys<span>houseshow</span></h1></a></Link></motion.li>
+            <motion.li variants={fadeInUp}><Link href="/boysboysboyslive"><a><h1 className="text-[#4cff46] hover:bg-[#4cff46]">Boys Boys Boys<span>houseshow</span></h1></a></Link></motion.li>
             <motion.li variants={fadeInUp}><Link href="/thunderunderthemud"><a><h1 className="text-[#7bffb0] hover:bg-[#7bffb0]">Thunder Under the Mud<span>clip</span></h1></a></Link></motion.li>
             <motion.li variants={fadeInUp}>
               <a href="https://www.instagram.com/itsguppybaby/" className='socials' target='_blank' rel="noreferrer">Instagram</a>

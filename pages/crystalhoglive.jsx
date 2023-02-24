@@ -41,7 +41,7 @@ export default function Crystalhoglive() {
         <CloseX/>
         
         <main className='page'>
-          <h1 className="text-[#FF0000]">Crystal Hog<span>live</span></h1>
+          <h1 className="text-[#FF0000]">Crystal Hog<span>houseshow</span></h1>
           <article>
             <motion.div
               initial={{ opacity: 0}}
