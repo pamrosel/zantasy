@@ -45,7 +45,7 @@ export default function Stewmagshoot() {
           <div className='page-about w-full'>
             <article>
               <div>
-                <h3 className='text-[pink]'>All shot by <a className='text-[pink] border-[pink]' href="https://www.jacobmccann.com.au" target='_blank'>Jacob Mcann</a> for bi-monthly music relief <a className='text-[pink] border-[pink]' href="https://www.sunflowerstew.com/" target='_blank'>the Stew</a>. Subscribe for a pittance.</h3>
+                <h3 className='text-[pink]'>All shot by <a className='text-[pink] border-[pink]' href="https://www.jacobmccann.com.au" target='_blank' rel="noreferrer">Jacob Mcann</a> for bi-monthly music relief <a className='text-[pink] border-[pink]' href="https://www.sunflowerstew.com/" target='_blank' rel="noreferrer">the Stew</a>. Subscribe for a pittance.</h3>
               </div>
             </article>
           </div>

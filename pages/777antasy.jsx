@@ -45,17 +45,17 @@ export default function Listen() {
                 <span className="font-['UnifrakturMaguntia']">released on</span> Gimmie Records<br/>
                 <span className="font-['UnifrakturMaguntia']">recorded &amp; mixed by </span> Luke Walsh<br/><br/>
 
-                <span className="font-['UnifrakturMaguntia']">GET</span> 12" VINYL RECORD @<br/>
-                <span className="font-['UnifrakturMaguntia']">label</span> <Link href="https://gimmiezine.bandcamp.com/album/777antasy" target="_blank"><a className='text-[#4a4dff] border-[#4a4dff]'>Gimmie Records</a></Link><br/>
-                <span className="font-['UnifrakturMaguntia']">bris</span> <Link href="https://www.sonicsherpa.com.au/store/guppy-777antasy-VY14481" target="_blank"><a className='text-[#4a4dff] border-[#4a4dff]'>Sonic Sherpa</a></Link><br/>
-                <span className="font-['UnifrakturMaguntia']">bris</span> <Link href="https://rockinghorse.net/index.php?route=product/product&path=1_27&product_id=95361&sort=pd.name&order=DESC&limit=50" target="_blank"><a className='text-[#4a4dff] border-[#4a4dff]'>Rocking Horse</a></Link><br/>
-                <span className="font-['UnifrakturMaguntia']">syd</span> <Link href="https://repressedrecords.com/products/guppy-777antasy-lp" target="_blank"><a className='text-[#4a4dff] border-[#4a4dff]'>Repressed Records</a></Link><br/>
-                <span className="font-['UnifrakturMaguntia']">melb</span> <Link href="https://lulusmelb.com/products/guppy-777antasy-lp" target="_blank"><a className='text-[#4a4dff] border-[#4a4dff]'>{`Lulu's`}</a></Link><br/>
+                <span className="font-['UnifrakturMaguntia']">GET</span> 12&quot; VINYL RECORD @<br/>
+                <span className="font-['UnifrakturMaguntia']">label</span> <Link href="https://gimmiezine.bandcamp.com/album/777antasy" target="_blank" rel="noreferrer"><a className='text-[#4a4dff] border-[#4a4dff]'>Gimmie Records</a></Link><br/>
+                <span className="font-['UnifrakturMaguntia']">bris</span> <Link href="https://www.sonicsherpa.com.au/store/guppy-777antasy-VY14481" target="_blank" rel="noreferrer"><a className='text-[#4a4dff] border-[#4a4dff]'>Sonic Sherpa</a></Link><br/>
+                <span className="font-['UnifrakturMaguntia']">bris</span> <Link href="https://rockinghorse.net/index.php?route=product/product&path=1_27&product_id=95361&sort=pd.name&order=DESC&limit=50" target="_blank" rel="noreferrer"><a className='text-[#4a4dff] border-[#4a4dff]'>Rocking Horse</a></Link><br/>
+                <span className="font-['UnifrakturMaguntia']">syd</span> <Link href="https://repressedrecords.com/products/guppy-777antasy-lp" target="_blank" rel="noreferrer"><a className='text-[#4a4dff] border-[#4a4dff]'>Repressed Records</a></Link><br/>
+                <span className="font-['UnifrakturMaguntia']">melb</span> <Link href="https://lulusmelb.com/products/guppy-777antasy-lp" target="_blank" rel="noreferrer"><a className='text-[#4a4dff] border-[#4a4dff]'>{`Lulu's`}</a></Link><br/>
                 <br/>
 
                 <span className="font-['UnifrakturMaguntia']">LISTEN</span>/STREAM IT<br/>
-                <span className="font-['UnifrakturMaguntia']">on</span> <Link href="https://open.spotify.com/album/38WkdpbGUVcC8UfPkF77LX" target="_blank"><a className='text-[#4a4dff] border-[#4a4dff]'>Spotify</a></Link><br/>
-                <span className="font-['UnifrakturMaguntia']">on</span> <Link href="https://music.apple.com/us/album/777antasy/1687306976" target="_blank"><a className='text-[#4a4dff] border-[#4a4dff]'>Apple Music</a></Link><br/><br/>
+                <span className="font-['UnifrakturMaguntia']">on</span> <Link href="https://open.spotify.com/album/38WkdpbGUVcC8UfPkF77LX" target="_blank" rel="noreferrer"><a className='text-[#4a4dff] border-[#4a4dff]'>Spotify</a></Link><br/>
+                <span className="font-['UnifrakturMaguntia']">on</span> <Link href="https://music.apple.com/us/album/777antasy/1687306976" target="_blank" rel="noreferrer"><a className='text-[#4a4dff] border-[#4a4dff]'>Apple Music</a></Link><br/><br/>
 
                 <span className="font-['UnifrakturMaguntia']">SONGS</span><br/>
                 <span className="font-['UnifrakturMaguntia']">1</span> Creepin&apos;<br/>

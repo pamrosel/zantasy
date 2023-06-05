@@ -48,7 +48,7 @@ export default function About() {
                 open={openId === '9'}
               >
               <summary>shiv</summary>
-              <span>: bass 🎸 & vox, ex Clever/Cured Pink/Per Purpose/Psy Ants/Kitchen's Floor</span></details>,&nbsp;
+              <span>: bass 🎸 & vox, ex Clever/Cured Pink/Per Purpose/Psy Ants/Kitchen&apos;s Floor</span></details>,&nbsp;
               <details
                 onClick={(e) => {
                   e.preventDefault();

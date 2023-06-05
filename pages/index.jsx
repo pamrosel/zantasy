@@ -1,5 +1,6 @@
 import styles from '../styles/Home.module.css'
 import { motion } from 'framer-motion'
+import Image from 'next/image';
 import Link from 'next/link';
 import { getAllPublished } from '../lib/notion';
 import Marquee from "react-fast-marquee";
@@ -43,54 +44,54 @@ export default function Home({posts}) {
         <nav>
           <motion.ul variants={stagger}>
             <motion.li variants={fadeInUp}>
-              <Link href="/about"><a>
+              <Link href="/about">
                 <h1 className="text-[white] hover:bg-[white] scale-y-[2]"><blockquote className='scale-y-[2]'>GUPPY</blockquote> <span>about</span></h1>
-              </a></Link>
+              </Link>
             </motion.li>
 
             <motion.li variants={fadeInUp}>
-              <Link href="/777antasy"><a>
+              <Link href="/777antasy">
                 <h1 className='text-[#4a4dff] hover:bg-[#4a4dff]'>777ANTASY &apos;zan-ta-see&apos; <span>debutLP/listen/buy</span></h1>
-              </a></Link>
+              </Link>
             </motion.li>
 
             <motion.li variants={fadeInUp} className='landscape:w-[13vw] landscape:mb-[-10vh] portrait:w-[20vw] portrait:mb-[-5vh] portrait:ml-[-5vw]'>
-            <Link href="/777antasy"><a>
-            <div className='bg-white relative justify-center rotate-12'>
-                  <img class="back" src="assets/777antasyBackcover.webp" />
-                  <img class="front" src="assets/777antasyRevisedSmall.webp" />
+            <Link href="/777antasy">
+                <div className='relative justify-center rotate-12 spinalbum'>
+                  <Image className="back" src="/assets/777antasyBackcover.webp" alt="777antasy front cover with pink disc" width={1000} height={800}/>
+                  <Image className="front" src="/assets/777antasyRevisedSmall.webp" alt="777antasy backcover with tracks" width={1000} height={800} />
                 </div>
-                </a></Link>
+            </Link>
             </motion.li>
 
             <motion.li variants={fadeInUp}>
-              <Link href="/codependentblueslive"><a>
+              <Link href="/codependentblueslive">
                 <h1 className="text-[#aa65ff] hover:bg-[#aa65ff]">Codependent Blues<span>live</span></h1>
-              </a></Link>
+              </Link>
             </motion.li>
 
             <motion.li variants={fadeInUp}>
-              <Link href="/stewmag9"><a>
+              <Link href="/stewmag9">
                 <h1 className="text-[cornsilk] hover:bg-[cornsilk]">The Stew #9<span>words</span></h1>
-              </a></Link>
+              </Link>
             </motion.li>
 
             <motion.li variants={fadeInUp}>
-              <Link href="/gimmiezine2"><a>
+              <Link href="/gimmiezine2">
                 <h1 className="text-[#ffc5e8] hover:bg-[#ffc5e8]">Gimmie Zine #2<span>words</span></h1>
-              </a></Link>
+              </Link>
             </motion.li>
 
             <motion.li variants={fadeInUp}>
-              <Link href="/crystalhoglive"><a>
+              <Link href="/crystalhoglive">
                 <h1 className="text-[#FF0000] hover:bg-[#FF0000]">Crystal Hog<span>houseshow</span></h1>
-              </a></Link>
+              </Link>
             </motion.li>
             
             <motion.li variants={fadeInUp}>
-              <Link href="/lipshitz"><a>
+              <Link href="/lipshitz">
                 <h1 className="text-[#ffff00] hover:bg-[#ffff00]">Lipshitz👄<span>clip</span></h1>
-              </a></Link>
+              </Link>
             </motion.li>
 
             <motion.li variants={fadeInUp} className='relative'>
@@ -110,22 +111,22 @@ export default function Home({posts}) {
 
 
             <motion.li variants={fadeInUp}>
-              <Link href="/boysboysboyslive"><a>
+              <Link href="/boysboysboyslive">
                 <h1 className="text-[#4cff46] hover:bg-[#4cff46]">Boys Boys Boys<span>houseshow</span></h1>
-              </a>
+              
               </Link>
             </motion.li>
 
             <motion.li variants={fadeInUp}>
-              <Link href="/thunderunderthemud"><a>
+              <Link href="/thunderunderthemud">
                 <h1 className="text-[#7bffb0] hover:bg-[#7bffb0]">Thunder Under the Mud<span>clip</span></h1>
-              </a></Link>
+              </Link>
             </motion.li>
 
             <motion.li variants={fadeInUp}>
-              <Link href="/stewmagshoot"><a>
+              <Link href="/stewmagshoot">
                 <h1 className="text-[pink] hover:bg-[pink] text-[5em] md:text-[10vw]">🕊<span>shoot</span></h1>
-              </a></Link>
+              </Link>
             </motion.li>
 
             <motion.li variants={fadeInUp} className='text-[.8em] w-[75%] md:text-[1em] md:w-[20%]'>
@@ -143,7 +144,6 @@ export default function Home({posts}) {
 
 export const getStaticProps = async () => {
   const data = await getAllPublished()
-
   return {
     props: {
       posts: data,
