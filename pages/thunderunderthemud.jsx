@@ -2,7 +2,6 @@ import React, { Suspense } from 'react'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import CloseX from '../components/CloseX'
-import Instructions from '../components/Instructions'
 import Loader from '../components/Loader'
 import { motion } from 'framer-motion'
 const Spline = React.lazy(() => import('@splinetool/react-spline'));
@@ -13,10 +12,6 @@ export default function ThunderUnder() {
     <motion.div exit={{opacity:0}}>
       <div className={styles.container}>
         <Head>
-          <title>GUPPY</title>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <meta name="description" content="Official clip for Thunder Under the Mud by Guppy, a band based in Meanjin, Brisbane Australia." />
-          <link rel="icon" href="/favicon.ico" />
           <link rel="preconnect" href="https://www.youtube.com/" crossOrigin/>
           <link rel="dns-prefetch" href="https://www.youtube.com/" />
           <link rel="preconnect" href="https://prod.spline.design" crossOrigin/>
@@ -44,7 +39,9 @@ export default function ThunderUnder() {
               animate={{ opacity: 1}}>
               <details className='text-[#7bffb0] border-[#7bffb0]'>
                   <summary>info</summary>
-                  <p>Filmed by Glen Schenau &amp; Jack Mitchell</p>
+                  <p>Filmed by Glen Schenau, edit by Jack</p>
+                  <p className='md:hidden'>✣BG: pinch zoom, 2finger rotate⇉, 3finger move⇶</p>
+                  <p className='hidden md:block'>✣BG: wheelscroll to zoom✺, click'n'drag to rotate⤿, rightclick to move⤭</p>
               </details>
             </motion.div>
             <motion.div 
@@ -56,7 +53,6 @@ export default function ThunderUnder() {
             </motion.div>
           </article>
         </main>
-        <Instructions/>
       </div>
     </motion.div>
   )
