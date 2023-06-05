@@ -38,8 +38,8 @@ export default function Stewmag9() {
                 animate={{ opacity: 1}}>
                 <details className='text-[cornsilk] border-[cornsilk]'>
                     <summary>info</summary>
-                    <p className='md:hidden'>✣BG: pinch zoom, 2finger rotate⇉, 3finger move⇶</p>
-                    <p className='hidden md:block'>✣BG: wheelscroll to zoom✺, click'n'drag to rotate⤿, rightclick to move⤭</p>
+                    <p className='md:hidden'>{`✣BG: pinch zoom, 2finger rotate⇉, 3finger move⇶`}</p>
+                    <p className='hidden md:block'>{`✣BG: wheelscroll to zoom✺, click'n'drag to rotate⤿, rightclick to move⤭`}</p>
                     <p>Writing by <a href="https://www.sunflowerstew.com/" target='_blank'>The Stew</a> chief, Photos by Ben Hudson</p>
                 </details>
               </motion.div>

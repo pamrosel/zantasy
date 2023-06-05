@@ -40,8 +40,8 @@ export default function ThunderUnder() {
               <details className='text-[#7bffb0] border-[#7bffb0]'>
                   <summary>info</summary>
                   <p>Filmed by Glen Schenau, edit by Jack</p>
-                  <p className='md:hidden'>✣BG: pinch zoom, 2finger rotate⇉, 3finger move⇶</p>
-                  <p className='hidden md:block'>✣BG: wheelscroll to zoom✺, click'n'drag to rotate⤿, rightclick to move⤭</p>
+                  <p className='md:hidden'>{`✣BG: pinch zoom, 2finger rotate⇉, 3finger move⇶`}</p>
+                  <p className='hidden md:block'>{`✣BG: wheelscroll to zoom✺, click'n'drag to rotate⤿, rightclick to move⤭`}</p>
               </details>
             </motion.div>
             <motion.div 

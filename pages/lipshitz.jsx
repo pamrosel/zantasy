@@ -40,8 +40,8 @@ export default function Lipshitz() {
                 <summary>Info</summary>
                 <p>Edit by pam, Filmed by Jack</p>
                 <p><a href="https://gimmiezine.com/2021/12/10/guppy-premiere/" target='_blank' rel="noreferrer">Making of Interview w/ Gimmie</a></p>
-                <p className='md:hidden'>✣BG: pinch zoom, 2finger rotate⇉, 3finger move⇶</p>
-                <p className='hidden md:block'>✣BG: wheelscroll to zoom✺, click'n'drag to rotate⤿, rightclick to move⤭</p>
+                <p className='md:hidden'>{`✣BG: pinch zoom, 2finger rotate⇉, 3finger move⇶`}</p>
+                <p className='hidden md:block'>{`✣BG: wheelscroll to zoom✺, click'n'drag to rotate⤿, rightclick to move⤭`}</p>
               </details>
             </motion.div>
             <motion.div 

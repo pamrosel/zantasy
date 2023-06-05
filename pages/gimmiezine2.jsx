@@ -37,8 +37,8 @@ export default function Gimmiezine2() {
               animate={{ opacity: 1}}>
               <details className='text-[#ffc5e8] border-[#ffc5e8]'>
                   <summary>info</summary>
-                  <p className='md:hidden'>✣BG: pinch zoom, 2finger rotate⇉, 3finger move⇶</p>
-                  <p className='hidden md:block'>✣BG: wheelscroll to zoom✺, click'n'drag to rotate⤿, rightclick to move⤭</p>
+                  <p className='md:hidden'>{`✣BG: pinch zoom, 2finger rotate⇉, 3finger move⇶`}</p>
+                  <p className='hidden md:block'>{`✣BG: wheelscroll to zoom✺, click'n'drag to rotate⤿, rightclick to move⤭`}</p>
                   <p><a href="https://gimmiezine.bandcamp.com/">Gimmie Shop</a></p>
                   <p><a href="https://gimmiezine.com/">Gimmie Website</a></p>
               </details>
