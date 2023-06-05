@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono&family=Syne+Tactile&family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&family=UnifrakturMaguntia&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -54,17 +54,6 @@ ol, ul {
 
 :root {
   --spacemono: 'Space Mono', monospace;
-}
-
-/* SWUP TRANSITIONS */
-
-.transition-fade {
-  opacity: 1;
-  transition: 500ms;
-}
-
-html.is-animating .transition-fade {
-  opacity: 0;
 }
 
 /* STYLES */
@@ -158,10 +147,6 @@ nav h1:hover {
   border-radius: 0;
 }
 
-#hotlinks ::before{
-  content: '🌼';
-}
-
 .marquee p {
   padding: .3em;
   font-family: 'Arial';
@@ -186,26 +171,6 @@ cursor: pointer;
   text-align: center;
 }
 
-.socials {
-  display: flex;
-  flex-direction: column;
-  color: #ff9aab;
-  padding: .5em;
-  font-size: 4.5vw;
-  border: solid 1px #ff9aab;
-  border-radius: 2em;
-  margin: 2px;
-  font-family: 'Space Mono';
-  transition: all .2s;
-  mix-blend-mode: difference;
-}
-
-.socials:hover {
-  color: #191919;
-  transform: skewY(5deg) scaleX(1);
-  background-color: #ff9aab;
-}
-
 .acknowledgement {
   background: linear-gradient(to right, rgb(69, 69, 69) 20%, rgb(255, 32, 32) 40%, rgb(255, 229, 133) 60%, rgb(69, 69, 69) 80%);
   background-size: 200% auto;
@@ -224,6 +189,8 @@ cursor: pointer;
     background-position: -200% center;
   }
 }
+
+/* PAGE/ARTICLE */
 
 .page {
   width: 100vw;
@@ -252,11 +219,7 @@ article {
   height: auto;
 }
 
-.bc-player {
-  border: 0; 
-  width: 100%; 
-  height: 42px;
-}
+/* CLOSE X */
 
 #close-btn {
   transition: all .1s ease-in-out;
@@ -274,21 +237,7 @@ article {
   mix-blend-mode: normal;
 }
 
-.explore {
-  background: linear-gradient(to right, rgb(69, 69, 69) 20%, rgb(255, 255, 255) 40%, rgb(255, 255, 255) 60%, rgb(69, 69, 69) 80%);
-  background-size: 200% auto;
-  color: #000;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 6s linear infinite;
-  font-family: 'Arial';
-  position: fixed;
-  bottom: 15px;
-  left: 15px;
-  z-index: 20;
-  opacity: .8;
-}
+/* INFO BLOCK */
 
 article > div > details {
   position: fixed;
@@ -332,11 +281,7 @@ article > div > details a {
   text-decoration: underline;
 }
 
-#bc-holder {
-  max-width: 700px;
-  margin: 0 auto;
-  position: relative;
-}
+/* ARTICLE HEADING */
 
 article > div > h3 {
   color:white;
@@ -407,6 +352,8 @@ article > div > h3 > details[open] {
   color: yellow;
 }
 
+/* SPINNING ALBUM IN MENU */
+
 .back, .front {
   position: absolute;
   bottom: 10px;
@@ -448,10 +395,6 @@ article > div > h3 > details[open] {
 
   h1 {
     font-size: 5.15vw;
-  }
-
-  .socials {
-    font-size: 2.5vw;
   }
 
   #close-btn {
