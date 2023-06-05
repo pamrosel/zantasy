@@ -221,14 +221,14 @@ article {
 
 /* CLOSE X */
 
-#close-btn {
+.close-btn {
   transition: all .1s ease-in-out;
   mix-blend-mode: exclusion;
   font-size: 2.4em;
   z-index: 60;
 }
 
-#close-btn:hover {
+.close-btn:hover {
   padding: 20px;
   transform: skewY(20deg);
   color: #191919;
@@ -414,7 +414,7 @@ article > div > h3 > details[open] {
     font-size: 5.15vw;
   }
 
-  #close-btn {
+  .close-btn {
     font-size: 6vw;
   }
 
