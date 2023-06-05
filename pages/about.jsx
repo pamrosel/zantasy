@@ -75,7 +75,7 @@ export default function About() {
                 open={openId === '4'}
               >
               <summary>pam</summary>
-              <span>ela rosel: vox 🎤, kazoo, cowbell, xylophone, toy-etcetera 🧸 &  <a href="https://www.instagram.com/queena_grot/" target='_blank' rel="noreferrer">Queena Grot🔮✨</a></span></details>, unhinged in the rich tradition of Meanjin Brisbane underground steez.
+              <span>ela rosel: vox 🎤, kazoo, cowbell, xylophone, toy-etcetera 🧸 &  <a href="https://www.instagram.com/queena_grot/" target='_blank' rel="noreferrer">Queena Grot🔮✨</a></span></details>. We are based in Meanjin, Brisbane.
               <br/><br/>
 
               Send us a message on<br/>
