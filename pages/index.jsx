@@ -38,7 +38,7 @@ export default function Home({posts}) {
   if(!posts) return <h1>No posts</h1>
 
   return (
-    <motion.div exit={{ opacity: 0, y: -60, transition: {duration: .6, ease: easing}}} initial='initial' animate='animate' className={styles.container}>
+    <motion.div exit={{ opacity: 0, y: -60, transition: {duration: .6, ease: easing}}} initial='initial' animate='animate' className={`${styles.container} overflow-hidden`}>
       <main className='flex items-center h-[100vh] overflow-y-hidden'>
         <MovingBg />
         <nav>
