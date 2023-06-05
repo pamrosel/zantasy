@@ -18,7 +18,7 @@ function MovingBg() {
                 times: [0, 0.2, 0.4, 0.6, 0.7, 0.8, .9, 1],
                 repeat: Infinity,
                 repeatDelay: 5,
-                delay: 5,
+                delay: 2,
               }}
               >
                     <Image
