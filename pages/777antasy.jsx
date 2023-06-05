@@ -1,11 +1,9 @@
 import React, { Suspense } from 'react'
-import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import CloseX from '../components/CloseX'
-import Loader from '../components/Loader'
+import HalfLoader from '../components/HalfLoader'
 import { motion } from 'framer-motion'
-import Stream from '../components/Stream'
 const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
 export default function Listen() {
@@ -13,31 +11,13 @@ export default function Listen() {
   return (
     <motion.div exit={{opacity:0}}>
       <div className={styles.container}>
-        <Head>
-          <title>GUPPY</title>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <meta name="description" content="777antasy as in like 'zan-ta-see' by Guppy is their first album, now released on vinyl by Gimmie Records, recorded and mixed by Luke Walsh. Songs include Creepin, Manila Pussy, Crystal Hog, Karaoke Song, Thunder Under the Mud, Lipshitz and Spirit." />
-          <link rel="icon" href="/favicon.ico" />
-          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
-          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
-          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
-          <link rel="manifest" href="/site.webmanifest"/>
-          <link rel="preconnect" href="https://bandcamp.com"/>
-          <link rel="dns-prefetch" href="https://bandcamp.com" crossOrigin/>
-          <link rel="preconnect" href="https://www.google-analytics.com" crossOrigin/>
-          <link rel="dns-prefetch" href="https://www.google-analytics.com" />
-          <link rel="preconnect" href="https://prod.spline.design" crossOrigin/>
-          <link rel="dns-prefetch" href="https://prod.spline.design" />
-        </Head>
-
-        <Loader />
+        <HalfLoader />
         <CloseX/>
-
         <motion.div 
           initial={{ opacity: 0}}
           animate={{ opacity: 1}}
           className='h-[100vw] md:h-[80vh] w-full flex items-center justify-center'>
-          <Suspense>
+          <Suspense className="relative">
             <Spline scene="https://prod.spline.design/sPQ9qgMM2IW9o24r/scene.splinecode" />
           </Suspense>
         </motion.div>
@@ -45,31 +25,38 @@ export default function Listen() {
         <div className="relative mt-[-100px] h-[100px] bg-gradient-to-b from-transparent to-[#191919]"></div>
         
         <main className='page-about'>
-          <h1 className="text-[#4a4dff]">777antasy<span>listen/buy</span></h1>
-          <article className='z-10 max-w-[700px]'>
+          <h1 className="text-[#4a4dff] z-10">777antasy<span>debutLP/listen/buy</span></h1>
+          <article className='z-10'>
             <motion.div 
               initial={{ opacity: 0}}
               animate={{ opacity: 1}}
               transition={{ delay: 2 }}
-              className='h-[373px]'>
-                <Stream/>
+              className='h-[620px]'>
+                <iframe src="https://open.spotify.com/embed/album/38WkdpbGUVcC8UfPkF77LX?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </motion.div>
 
-            <motion.div className='mt-[25px] mb-[100px] md:mb-[15vh] p-[15px] md:p-0'>
+            <motion.div className='mt-[25px] mb-[100px] md:mb-[15vh] p-[15px] md:p-0'>              
+              {/* <h4 className="text-[#4a4dff] pb-2">
+                {`We recorded this thing in the hot summer of 2021 in a little shed in Stafford across from the tavern. Dubsy recorded it standing in front of a white pedestal fan on the highest setting. It's our sweaty baby and first recording, picked up by Gimmie who released it as their first on Gimmie Records.`}
+              </h4> */}
+              
               <h3 className="text-[#4a4dff]">
-                <a href="https://gimmiezine.bandcamp.com/album/777antasy" target='_blank' rel="noreferrer">BUY THE ALBUM</a>
-                <br/><br/>
 
                 <span className="font-['UnifrakturMaguntia']">released on</span> Gimmie Records<br/>
-                <span className="font-['UnifrakturMaguntia']">recorded &amp; mixed by </span> Luke Walsh<br/>
-                <span className="font-['UnifrakturMaguntia']">release date</span> October &apos;22<br/>
-                <span className="font-['UnifrakturMaguntia']">album art </span> Pamela Rosel<br/><br/>
+                <span className="font-['UnifrakturMaguntia']">recorded &amp; mixed by </span> Luke Walsh<br/><br/>
 
-                <span className="font-['UnifrakturMaguntia']">drums </span> Callum Galletly<br/>
-                <span className="font-['UnifrakturMaguntia']">sax, effects &amp; vocals </span> Jack Mitchell<br/>
-                <span className="font-['UnifrakturMaguntia']">vocals &amp; toys</span> Pamela Rosel<br/>
-                <span className="font-['UnifrakturMaguntia']">bass &amp; vocals</span> Mitchell Perkins<br/><br/>
-                
+                <span className="font-['UnifrakturMaguntia']">GET</span> 12" VINYL RECORD @<br/>
+                <span className="font-['UnifrakturMaguntia']">label</span> <Link href="https://gimmiezine.bandcamp.com/album/777antasy" target="_blank"><a className='text-[#4a4dff] border-[#4a4dff]'>Gimmie Records</a></Link><br/>
+                <span className="font-['UnifrakturMaguntia']">bris</span> <Link href="https://www.sonicsherpa.com.au/store/guppy-777antasy-VY14481" target="_blank"><a className='text-[#4a4dff] border-[#4a4dff]'>Sonic Sherpa</a></Link><br/>
+                <span className="font-['UnifrakturMaguntia']">bris</span> <Link href="https://rockinghorse.net/index.php?route=product/product&path=1_27&product_id=95361&sort=pd.name&order=DESC&limit=50" target="_blank"><a className='text-[#4a4dff] border-[#4a4dff]'>Rocking Horse</a></Link><br/>
+                <span className="font-['UnifrakturMaguntia']">syd</span> <Link href="https://repressedrecords.com/products/guppy-777antasy-lp" target="_blank"><a className='text-[#4a4dff] border-[#4a4dff]'>Repressed Records</a></Link><br/>
+                <span className="font-['UnifrakturMaguntia']">melb</span> <Link href="https://lulusmelb.com/products/guppy-777antasy-lp" target="_blank"><a className='text-[#4a4dff] border-[#4a4dff]'>{`Lulu's`}</a></Link><br/>
+                <br/>
+
+                <span className="font-['UnifrakturMaguntia']">LISTEN</span>/STREAM IT<br/>
+                <span className="font-['UnifrakturMaguntia']">on</span> <Link href="https://open.spotify.com/album/38WkdpbGUVcC8UfPkF77LX" target="_blank"><a className='text-[#4a4dff] border-[#4a4dff]'>Spotify</a></Link><br/>
+                <span className="font-['UnifrakturMaguntia']">on</span> <Link href="https://music.apple.com/us/album/777antasy/1687306976" target="_blank"><a className='text-[#4a4dff] border-[#4a4dff]'>Apple Music</a></Link><br/><br/>
+
                 <span className="font-['UnifrakturMaguntia']">SONGS</span><br/>
                 <span className="font-['UnifrakturMaguntia']">1</span> Creepin&apos;<br/>
                 <span className="font-['UnifrakturMaguntia']">2</span> Manila Pussy<br/>
@@ -80,7 +67,7 @@ export default function Listen() {
                 <br/>
                 <span className="font-['UnifrakturMaguntia']">6</span> Lipshitz&nbsp;
                 <Link href="/lipshitz"><a className='text-[#4a4dff] border-[#4a4dff]'>clip</a></Link><br/>
-                <span className="font-['UnifrakturMaguntia']">7</span> Spirit
+                <span className="font-['UnifrakturMaguntia']">7</span> Spirit Song
               </h3>
             </motion.div>
           </article>
