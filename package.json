@@ -9,7 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@cloudinary/react": "^1.11.2",
+    "@cloudinary/url-gen": "^1.10.0",
     "@loadable/component": "^5.15.2",
+    "@notionhq/client": "^2.2.5",
     "@splinetool/react-spline": "^2.2.2",
     "@splinetool/runtime": "^0.9.106",
     "framer-motion": "^7.6.1",
@@ -19,8 +22,8 @@
     "p-min-delay": "^4.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-ig-feed": "^1.7.0",
-    "react-intersection-observer": "^9.4.0"
+    "react-fast-marquee": "^1.6.0",
+    "react-spotify-embed": "^2.0.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.12",
