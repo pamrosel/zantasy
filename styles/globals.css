@@ -45,6 +45,11 @@ ol, ul {
 	list-style: none;
 }
 
+.bgmenu {
+  background-image: url('/assets/ketnight-bg2.webp');
+  background-repeat: no-repeat;
+}
+
 /* ROOT */
 
 :root {
@@ -82,7 +87,6 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   font-size: 4vh;
-  mix-blend-mode: exclusion;
   position: relative;
   letter-spacing: -.025em;
 }
@@ -113,7 +117,15 @@ nav > ul li a h2 {
   position: fixed;
   top: 15px;
   left: 10px;
-  font-size: 6vw;
+  font-size: 11vw;
+  mix-blend-mode: difference;
+  width: 80vw;
+  z-index: 50;
+  line-height: .8em;
+}
+
+.page h1 span, .page-btm h1 span, .page-about h1 span {
+  line-height: 1.5em;
 }
 
 h1 span {
@@ -146,6 +158,34 @@ nav h1:hover {
   border-radius: 0;
 }
 
+#hotlinks ::before{
+  content: '🌼';
+}
+
+.marquee p {
+  padding: .3em;
+  font-family: 'Arial';
+  color: #191919;
+  margin: .6em 1px;
+  line-height: .5em;
+  border: 1px solid #191919;
+  border-radius: 3em;
+  background: linear-gradient(to right, rgb(255, 255, 255) 20%, rgb(255, 72, 160) 40%, rgb(255, 133, 243) 60%, rgb(159, 159, 159) 80%);
+  transition: .08s;
+}
+
+.marquee p:hover {
+padding: 1.5em .3em;
+cursor: pointer;
+}
+
+.marquee p:hover::after {
+  content: attr(data-action);
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+
 .socials {
   display: flex;
   flex-direction: column;
@@ -167,7 +207,7 @@ nav h1:hover {
 }
 
 .acknowledgement {
-  background: linear-gradient(to right, rgb(69, 69, 69) 20%, rgb(255, 72, 160) 40%, rgb(255, 133, 243) 60%, rgb(69, 69, 69) 80%);
+  background: linear-gradient(to right, rgb(69, 69, 69) 20%, rgb(255, 32, 32) 40%, rgb(255, 229, 133) 60%, rgb(69, 69, 69) 80%);
   background-size: 200% auto;
   color: #000;
   background-clip: text;
@@ -175,7 +215,6 @@ nav h1:hover {
   -webkit-text-fill-color: transparent;
   animation: shine 6s linear infinite;
   font-family: 'Arial';
-  font-size: .8em;
   line-height: 1.1em;
   padding: 1rem;
 }
@@ -223,7 +262,7 @@ article {
   transition: all .1s ease-in-out;
   mix-blend-mode: exclusion;
   font-size: 2.4em;
-  z-index: 20;
+  z-index: 60;
 }
 
 #close-btn:hover {
@@ -301,9 +340,10 @@ article > div > details a {
 
 article > div > h3 {
   color:white;
-  font-size: 5vw;
+  font-size: 6.25vw;
   font-family: 'Arial';
   display: inline;
+  line-height: 1.25em;
 }
 
 details summary::-webkit-details-marker {
@@ -367,12 +407,40 @@ article > div > h3 > details[open] {
   color: yellow;
 }
 
+.back, .front {
+  position: absolute;
+  bottom: 10px;
+}
+
+.front {
+	transform: rotateY(90deg);
+  animation: frontAnimation 5s linear infinite;
+  opacity: 1;
+}
+
+
+@keyframes frontAnimation {
+	from {transform: rotateY(90deg); opacity: 1;}
+	50% {transform: rotateY(-90deg); opacity: 1;}
+  51% {transform: rotateY(-90deg); opacity: 0;}
+  to {transform: rotateY(90deg); opacity: 0;}
+}
+
+.back {
+	transform: rotateY(90deg);
+  animation: backAnimation 5s linear infinite;
+  opacity: 0;
+}
+
+@keyframes backAnimation {
+	from {transform: rotateY(90deg); opacity: 0;}
+	50% {transform: rotateY(90deg); opacity: 0;}
+  51% {transform: rotateY(90deg); opacity: 1;}
+  to {transform: rotateY(-90deg); opacity: 1;}
+}
+
 
 @media (min-width: 600px) {
-
-  .acknowledgement {
-    font-size: 1.45vw;
-  }
 
   h1 span {
     font-size: 2vw;
@@ -423,10 +491,6 @@ article > div > h3 > details[open] {
 
   h1 {
     font-size: 4.9vw;
-  }
-
-  .acknowledgement {
-    font-size: 2em;
   }
 
 }
