@@ -27,7 +27,7 @@ export default function Stewmagshoot() {
   return (<>
     <CloseX />
     <motion.div className='page-about' exit={{opacity:0}}>
-      <h1 className="text-[pink] fixed">The Stew Cover<span>shoot</span></h1>
+      <h1 className="text-[pink] fixed">The Stew Cover<span>photo shoot</span></h1>
         
         <div>
           <AdvancedImage cldImg={sm10_2} />
@@ -36,7 +36,7 @@ export default function Stewmagshoot() {
           <AdvancedImage cldImg={sm10_6} />
           <AdvancedImage cldImg={sm10_3} />
           <AdvancedImage cldImg={sm10_1} />
-          <AdvancedImage cldImg={sm10_10} />
+
           <div className='w-full flex justify-center'>
             <figure className='m-[10vh] md:mx-[20vw] animate-spin overflow-hidden hover:animate-none'>
               <AdvancedImage cldImg={sm10_11} />
