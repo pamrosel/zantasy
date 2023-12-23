@@ -190,6 +190,31 @@ cursor: pointer;
   }
 }
 
+/* NAG NAG NAG BG */
+.nagnagbg {
+  background-image: url('/assets/NAGNAGNAG8.jpg');
+  background-repeat: repeat;
+  background-size: 300px;
+  background-position: center;
+  /* Set animation properties */
+  animation-name: bgSizeAnimation; /* Name of the keyframes */
+  animation-duration: 4s; /* Duration of the animation */
+  animation-iteration-count: infinite; /* Loop the animation infinitely */
+  animation-timing-function: ease-in-out; /* Animation timing function */
+}
+
+@keyframes bgSizeAnimation {
+  0% {
+    background-size: 300px;
+  }
+  50% {
+    background-size: 1900px;
+  }
+  100% {
+    background-size: 300px;
+  }
+}
+
 /* PAGE/ARTICLE */
 
 .page {
