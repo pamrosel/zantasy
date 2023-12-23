@@ -45,7 +45,14 @@ export default function Home({posts}) {
           <motion.ul variants={stagger}>
             <motion.li variants={fadeInUp}>
               <Link href="/about">
-                <h1 className="text-[white] hover:bg-[white] scale-y-[2]"><blockquote className='scale-y-[2]'>GUPPY</blockquote> <span>about</span></h1>
+                <h1 className="text-[white] hover:bg-[white] scale-y-[2]"><blockquote className='scale-y-[2]'>GUPPY</blockquote> <span>contact</span></h1>
+              </Link>
+            </motion.li>
+
+
+            <motion.li variants={fadeInUp}>
+              <Link href="/nagnagnagset">
+                <h1 className='text-[#ff65ff] hover:bg-[#ff65ff]'>NAG NAG NAG<span>8 full live set</span></h1>
               </Link>
             </motion.li>
 
