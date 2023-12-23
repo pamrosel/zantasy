@@ -101,7 +101,7 @@ export default function Home({posts}) {
 
             <motion.li variants={fadeInUp}>
               <Link href="https://colossusrecords.square.site/product/verity-whisper-guppy-7-split-vinyl/14?cp=true&sa=true&sbp=false&q=false" target='_blank'>
-                <h1 className="text-[#ff8465] hover:bg-[#ff8465]">TO-DO-A<br/>/BONE SHED<span>Split 7" w/ Verity Whisper on Colossus Records</span></h1>
+                <h1 className="text-[#ff8465] hover:bg-[#ff8465]">TO-DO-A<br/>/BONE SHED<span>Split 7&quot; w/ Verity Whisper on Colossus Records</span></h1>
               </Link>
             </motion.li>
 
