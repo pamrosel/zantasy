@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import { AnimatePresence } from 'framer-motion'
+import { Analytics } from '@vercel/analytics/react';
 import Head from 'next/head'
 
 function MyApp({ Component, pageProps, router } = this.props) {
@@ -14,6 +15,7 @@ function MyApp({ Component, pageProps, router } = this.props) {
           <link rel="manifest" href="/site.webmanifest"/>
         </Head>
       <Component {...pageProps} key={router.route}/>
+      <Analytics />
     </AnimatePresence>
   )
 }
