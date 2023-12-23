@@ -42,7 +42,16 @@ export default function Home({posts}) {
       <main className='flex items-center h-[100vh] overflow-y-hidden'>
         <MovingBg />
         <nav>
+
+
+          
           <motion.ul variants={stagger}>
+
+
+
+
+
+
             <motion.li variants={fadeInUp}>
               <Link href="/about">
                 <h1 className="text-[white] hover:bg-[white] scale-y-[2]"><blockquote className='scale-y-[2]'>GUPPY</blockquote> <span>contact</span></h1>
@@ -57,25 +66,51 @@ export default function Home({posts}) {
             </motion.li>
 
             <motion.li variants={fadeInUp}>
-              <Link href="/777antasy">
-                <h1 className='text-[#4a4dff] hover:bg-[#4a4dff]'>777ANTASY &apos;zan-ta-see&apos; <span>debutLP/listen/buy</span></h1>
+              <Link href="/boysboysboyslive">
+                <h1 className="text-[#4cff46] hover:bg-[#4cff46]">Boys Boys Boys<span>houseshow</span></h1>
+              
               </Link>
             </motion.li>
 
-            <motion.li variants={fadeInUp} className='landscape:w-[13vw] landscape:mb-[-10vh] portrait:w-[20vw] portrait:mb-[-5vh] portrait:ml-[-5vw]'>
-            <Link href="/777antasy">
+
+
+            <motion.li variants={fadeInUp} className='z-0 landscape:w-[18vw] landscape:mb-[-10vh] portrait:w-[30vw] portrait:mb-[-5vh] '>
+            <Link href="https://www.alowhum.com/" target='_blank'>
+                <div className='relative justify-center'>
+                <Image src="/assets/Camp2024-Anim.gif" alt="Camp A Low Hum Poster 2024" width={1000} height={800} />
+                </div>
+            </Link>
+            </motion.li>
+
+            {/* <motion.li variants={fadeInUp}>
+              <Link href="/nagnagnagset">
+                <h1 className='text-[#e2ff81] hover:bg-[#e2ff81]'>🏕️ Camp a Low Hum<span>we're going to nz!</span></h1>
+              </Link>
+            </motion.li> */}
+
+
+            <motion.li variants={fadeInUp} className='landscape:w-[13vw] landscape:mb-[-10vh] portrait:w-[28vw] portrait:mb-[-5vh] portrait:ml-[-5vw]'>
+            <Link href="https://colossusrecords.square.site/product/verity-whisper-guppy-7-split-vinyl/14?cp=true&sa=true&sbp=false&q=false" target='_blank'>
                 <div className='relative justify-center rotate-12 spinalbum'>
-                  <Image className="back" src="/assets/777antasyBackcover.webp" alt="777antasy front cover with pink disc" width={1000} height={800}/>
-                  <Image className="front" src="/assets/777antasyRevisedSmall.webp" alt="777antasy backcover with tracks" width={1000} height={800} />
+                <Image className="front" src="/assets/todo-aGuppyColossusSplit.jpg" alt="Side B To Do A by Guppy on Colossus Records" width={1000} height={800} />
+                  <Image className="back" src="/assets/boneshedVerityWhisperColossusSplit.jpg" alt="Side A Bone Shed by Verity Whisper on Colossus Records" width={1000} height={800}/>
+                  
                 </div>
             </Link>
             </motion.li>
 
             <motion.li variants={fadeInUp}>
+              <Link href="https://colossusrecords.square.site/product/verity-whisper-guppy-7-split-vinyl/14?cp=true&sa=true&sbp=false&q=false" target='_blank'>
+                <h1 className="text-[#ff8465] hover:bg-[#ff8465]">TO-DO-A<br/>/BONE SHED<span>Split 7" w/ Verity Whisper on Colossus Records</span></h1>
+              </Link>
+            </motion.li>
+
+
+            {/* <motion.li variants={fadeInUp}>
               <Link href="/codependentblueslive">
                 <h1 className="text-[#aa65ff] hover:bg-[#aa65ff]">Codependent Blues<span>live</span></h1>
               </Link>
-            </motion.li>
+            </motion.li> */}
 
             <motion.li variants={fadeInUp}>
               <Link href="/stewmag9">
@@ -89,11 +124,7 @@ export default function Home({posts}) {
               </Link>
             </motion.li>
 
-            <motion.li variants={fadeInUp}>
-              <Link href="/crystalhoglive">
-                <h1 className="text-[#FF0000] hover:bg-[#FF0000]">Crystal Hog<span>houseshow</span></h1>
-              </Link>
-            </motion.li>
+
             
             <motion.li variants={fadeInUp}>
               <Link href="/lipshitz">
@@ -101,8 +132,16 @@ export default function Home({posts}) {
               </Link>
             </motion.li>
 
+            <motion.li variants={fadeInUp}>
+              <Link href="/thunderunderthemud">
+                <h1 className="text-[#7bffb0] hover:bg-[#7bffb0]">Thunder Under the Mud<span>clip</span></h1>
+              </Link>
+            </motion.li>
+
+
+
             <motion.li variants={fadeInUp} className='relative'>
-              {/* <div className='absolute text-white right-0 top-[-50px] text-[4em]'>GIGS</div> */}
+              {/* <div className='absolute text-white right-0 top-[-50px] text-[4em]'>linktree</div> */}
               <div className='upcoming w-[100vw] scale-y-[2]'>
                 <Marquee>
                   {posts.map((post, index) => (
@@ -116,23 +155,30 @@ export default function Home({posts}) {
               </div>
             </motion.li>
 
+            {/* <motion.li variants={fadeInUp}>
+              <Link href="/crystalhoglive">
+                <h1 className="text-[#FF0000] hover:bg-[#FF0000]">Crystal Hog<span>houseshow</span></h1>
+              </Link>
+            </motion.li> */}
 
             <motion.li variants={fadeInUp}>
-              <Link href="/boysboysboyslive">
-                <h1 className="text-[#4cff46] hover:bg-[#4cff46]">Boys Boys Boys<span>houseshow</span></h1>
-              
+              <Link href="/777antasy">
+                <h1 className='text-[#4a4dff] hover:bg-[#4a4dff]'>777ANTASY &apos;zan-ta-see&apos; <span>LP/listen/buy</span></h1>
               </Link>
             </motion.li>
 
-            <motion.li variants={fadeInUp}>
-              <Link href="/thunderunderthemud">
-                <h1 className="text-[#7bffb0] hover:bg-[#7bffb0]">Thunder Under the Mud<span>clip</span></h1>
-              </Link>
+            <motion.li variants={fadeInUp} className='landscape:w-[13vw] landscape:mb-[-10vh] portrait:w-[28vw] portrait:mb-[-5vh] portrait:ml-[-5vw]'>
+            <Link href="/777antasy">
+                <div className='relative justify-center rotate-12 spinalbum'>
+                  <Image className="back" src="/assets/777antasyBackcover.webp" alt="777antasy front cover with pink disc" width={1000} height={800}/>
+                  <Image className="front" src="/assets/777antasyRevisedSmall.webp" alt="777antasy backcover with tracks" width={1000} height={800} />
+                </div>
+            </Link>
             </motion.li>
 
             <motion.li variants={fadeInUp}>
               <Link href="/stewmagshoot">
-                <h1 className="text-[pink] hover:bg-[pink] text-[5em] md:text-[10vw]">🕊<span>shoot</span></h1>
+                <h1 className="text-[pink] hover:bg-[pink] text-[5em] md:text-[10vw]">🕊<span>photo shoot</span></h1>
               </Link>
             </motion.li>
 
@@ -141,6 +187,7 @@ export default function Home({posts}) {
                 We&apos;re a band on stolen Jagera and Turrbal land and stand in solidarity with elders past, present and emerging in their ongoing connection to country. <span className="font-['UnifrakturMaguntia']">Always was, always will be.</span>
               </p>
             </motion.li>
+
 
           </motion.ul>
         </nav>
