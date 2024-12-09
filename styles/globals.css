@@ -1,37 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono&family=UnifrakturMaguntia&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&family=UnifrakturMaguntia&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* RESET */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
   background-color: #191919;
   min-height: 100vh;
   min-height: -webkit-fill-available;
@@ -41,26 +118,41 @@ html {
   height: -webkit-fill-available;
 }
 
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
 
 .bgmenu {
-  background-image: url('/assets/ketnight-bg2.webp');
+  background-image: url("/assets/ketnight-bg2.webp");
   background-repeat: no-repeat;
 }
 
 /* ROOT */
 
 :root {
-  --spacemono: 'Space Mono', monospace;
+  --spacemono: "Space Mono", monospace;
 }
 
 /* STYLES */
 
-.video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
 
-.video-container iframe, .video-container object, .video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .spline-bg {
   position: fixed;
@@ -77,12 +169,12 @@ h1 {
   color: white;
   font-size: 4vh;
   position: relative;
-  letter-spacing: -.025em;
+  letter-spacing: -0.025em;
 }
 
 nav > ul li a h1 {
   border: 1px solid;
-  padding: .6em 0;
+  padding: 0.6em 0;
   border-radius: 1em;
   text-align: center;
   margin-bottom: 2px;
@@ -95,14 +187,16 @@ nav > ul li a h2 {
   font-size: 4vw;
   color: gray;
   border: 1px solid gray;
-  padding: .3em;
+  padding: 0.3em;
   display: inline-flex;
   margin: 1px;
-  font-family: 'Space Mono';
+  font-family: "Space Mono";
   border-radius: 1em;
 }
 
-.page h1, .page-btm h1, .page-about h1 {
+.page h1,
+.page-btm h1,
+.page-about h1 {
   position: fixed;
   top: 15px;
   left: 10px;
@@ -110,10 +204,12 @@ nav > ul li a h2 {
   mix-blend-mode: difference;
   width: 80vw;
   z-index: 50;
-  line-height: .8em;
+  line-height: 0.8em;
 }
 
-.page h1 span, .page-btm h1 span, .page-about h1 span {
+.page h1 span,
+.page-btm h1 span,
+.page-about h1 span {
   line-height: 1.5em;
 }
 
@@ -123,9 +219,9 @@ h1 span {
   top: initial;
   left: initial;
   padding: 0 8px;
-  letter-spacing: -.01em;
+  letter-spacing: -0.01em;
   position: absolute;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 nav > ul li a h1 span {
@@ -140,28 +236,34 @@ li {
 nav h1:hover {
   color: #191919;
   transform: skewY(5deg) scaleX(1);
-  transition: all .1s;
+  transition: all 0.1s;
   padding: 1em 0;
-  margin: -.5em 0;
+  margin: -0.5em 0;
   overflow: hidden;
   border-radius: 0;
 }
 
 .marquee p {
-  padding: .3em;
-  font-family: 'Arial';
+  padding: 0.3em;
+  font-family: "Arial";
   color: #191919;
-  margin: .6em 1px;
-  line-height: .5em;
+  margin: 0.6em 1px;
+  line-height: 0.5em;
   border: 1px solid #191919;
   border-radius: 3em;
-  background: linear-gradient(to right, rgb(255, 255, 255) 20%, rgb(255, 72, 160) 40%, rgb(255, 133, 243) 60%, rgb(159, 159, 159) 80%);
-  transition: .08s;
+  background: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 20%,
+    rgb(255, 72, 160) 40%,
+    rgb(255, 133, 243) 60%,
+    rgb(159, 159, 159) 80%
+  );
+  transition: 0.08s;
 }
 
 .marquee p:hover {
-padding: 1.5em .3em;
-cursor: pointer;
+  padding: 1.5em 0.3em;
+  cursor: pointer;
 }
 
 .marquee p:hover::after {
@@ -172,14 +274,20 @@ cursor: pointer;
 }
 
 .acknowledgement {
-  background: linear-gradient(to right, rgb(69, 69, 69) 20%, rgb(255, 32, 32) 40%, rgb(255, 229, 133) 60%, rgb(69, 69, 69) 80%);
+  background: linear-gradient(
+    to right,
+    rgb(69, 69, 69) 20%,
+    rgb(255, 32, 32) 40%,
+    rgb(255, 229, 133) 60%,
+    rgb(69, 69, 69) 80%
+  );
   background-size: 200% auto;
   color: #000;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 6s linear infinite;
-  font-family: 'Arial';
+  font-family: "Arial";
   line-height: 1.1em;
   padding: 1rem;
 }
@@ -192,7 +300,7 @@ cursor: pointer;
 
 /* NAG NAG NAG BG */
 .nagnagbg {
-  background-image: url('/assets/NAGNAGNAG8.jpg');
+  background-image: url("/assets/NAGNAGNAG8.jpg");
   background-repeat: repeat;
   background-size: 300px;
   background-position: center;
@@ -201,6 +309,13 @@ cursor: pointer;
   animation-duration: 4s; /* Duration of the animation */
   animation-iteration-count: infinite; /* Loop the animation infinitely */
   animation-timing-function: ease-in-out; /* Animation timing function */
+}
+
+.breaktheinternetbg {
+  background-image: url("/assets/brbbreakinternetbg.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  background-position: 100;
 }
 
 @keyframes bgSizeAnimation {
@@ -247,7 +362,7 @@ article {
 /* CLOSE X */
 
 .close-btn {
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   mix-blend-mode: exclusion;
   font-size: 2.4em;
   z-index: 60;
@@ -268,12 +383,12 @@ article > div > details {
   position: fixed;
   bottom: 1.2em;
   right: 1.2em;
-  font-family: 'Space Mono';
+  font-family: "Space Mono";
   border: 1.2px solid white;
   border-radius: 64px;
   width: auto;
   mix-blend-mode: normal;
-  font-size: .8em;
+  font-size: 0.8em;
   text-transform: uppercase;
   overflow: hidden;
   line-height: 1.25em;
@@ -287,14 +402,22 @@ article > div > details summary {
 }
 
 article > div > details[open] summary ~ * {
-  animation: credits .5s ease-in-out;
+  animation: credits 0.5s ease-in-out;
   padding: 1.5em;
   text-align: center;
 }
 
 @keyframes credits {
-  0%    {opacity: 0; margin-bottom: -100px; padding: 0em}
-  100%  {opacity: 1; margin-bottom: 0px; padding: 1em}
+  0% {
+    opacity: 0;
+    margin-bottom: -100px;
+    padding: 0em;
+  }
+  100% {
+    opacity: 1;
+    margin-bottom: 0px;
+    padding: 1em;
+  }
 }
 
 article > div > details[open] {
@@ -309,9 +432,9 @@ article > div > details a {
 /* ARTICLE HEADING */
 
 article > div > h3 {
-  color:white;
+  color: white;
   font-size: 6.25vw;
-  font-family: 'Arial';
+  font-family: "Arial";
   display: inline;
   line-height: 1.25em;
 }
@@ -322,40 +445,43 @@ details summary::-webkit-details-marker {
 
 article > div > h3 > details {
   display: inline;
-  transition: all .1s;
+  transition: all 0.1s;
 }
 
 article > div > h3 > details > span {
   display: inline;
-  transition: all .1s;
+  transition: all 0.1s;
 }
 
-article > div > h3 > details > span a, article > div > h3 > details > span Link a {
+article > div > h3 > details > span a,
+article > div > h3 > details > span Link a {
   color: rgb(249, 138, 255);
   border: 1px solid rgb(249, 138, 255);
   border-radius: 1em;
-  padding: 5px .5em;
-  font-family: 'Space Mono';
-  font-size: .8em;
+  padding: 5px 0.5em;
+  font-family: "Space Mono";
+  font-size: 0.8em;
 }
 
 article > div > h3 > details > span a:hover {
   background-color: rgb(249, 138, 255);
   border: 1px solid rgb(249, 138, 255);
-  color: #090B11;
+  color: #090b11;
   cursor: pointer;
 }
 
-article > div > h3 > details > summary, h3 a {
+article > div > h3 > details > summary,
+h3 a {
   display: inline;
   border: solid 1px white;
   border-radius: 1em;
-  transition: all .1s;
+  transition: all 0.1s;
   color: white;
   padding: 0 3px;
 }
 
-article > div > h3 > details > summary:hover, h3 a:hover {
+article > div > h3 > details > summary:hover,
+h3 a:hover {
   display: inline;
   border: solid 1px yellow;
   transform: skewY(5deg) scaleX(1);
@@ -396,41 +522,63 @@ article > div > h3 > details[open] {
   display: block;
 }
 
-.back, .front {
+.back,
+.front {
   position: absolute;
   bottom: 10px;
 }
 
 .front {
-	transform: rotateY(90deg);
+  transform: rotateY(90deg);
   animation: frontAnimation 5s linear infinite;
   opacity: 1;
 }
 
-
 @keyframes frontAnimation {
-	from {transform: rotateY(90deg); opacity: 1;}
-	50% {transform: rotateY(-90deg); opacity: 1;}
-  51% {transform: rotateY(-90deg); opacity: 0;}
-  to {transform: rotateY(90deg); opacity: 0;}
+  from {
+    transform: rotateY(90deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotateY(-90deg);
+    opacity: 1;
+  }
+  51% {
+    transform: rotateY(-90deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateY(90deg);
+    opacity: 0;
+  }
 }
 
 .back {
-	transform: rotateY(90deg);
+  transform: rotateY(90deg);
   animation: backAnimation 5s linear infinite;
   opacity: 0;
 }
 
 @keyframes backAnimation {
-	from {transform: rotateY(90deg); opacity: 0;}
-	50% {transform: rotateY(90deg); opacity: 0;}
-  51% {transform: rotateY(90deg); opacity: 1;}
-  to {transform: rotateY(-90deg); opacity: 1;}
+  from {
+    transform: rotateY(90deg);
+    opacity: 0;
+  }
+  50% {
+    transform: rotateY(90deg);
+    opacity: 0;
+  }
+  51% {
+    transform: rotateY(90deg);
+    opacity: 1;
+  }
+  to {
+    transform: rotateY(-90deg);
+    opacity: 1;
+  }
 }
 
-
 @media (min-width: 600px) {
-
   h1 span {
     font-size: 2vw;
   }
@@ -448,11 +596,11 @@ article > div > h3 > details[open] {
   }
 
   nav > ul li a h1 {
-    padding: 0 0 .5em 0;
+    padding: 0 0 0.5em 0;
     margin-bottom: 0;
     margin: 1px;
   }
-  
+
   article {
     width: 50%;
   }
@@ -460,22 +608,27 @@ article > div > h3 > details[open] {
   article > div > details summary {
     padding: 2em;
   }
-  
+
   article > div > details[open] summary ~ * {
     padding: 2em;
   }
-  
-  @keyframes credits {
-    0%    {opacity: 0; margin-bottom: -100px; padding: 0em}
-    100%  {opacity: 1; margin-bottom: 0px; padding: 2em}
-  }
 
+  @keyframes credits {
+    0% {
+      opacity: 0;
+      margin-bottom: -100px;
+      padding: 0em;
+    }
+    100% {
+      opacity: 1;
+      margin-bottom: 0px;
+      padding: 2em;
+    }
+  }
 }
 
 @media (min-width: 1900px) {
-
   h1 {
     font-size: 4.9vw;
   }
-
 }
