@@ -180,7 +180,7 @@ export default function Home({ posts }) {
               >
                 <h1 className="text-[#ff8bf2] hover:bg-[#ff8bf2]">
                   @itsguppybaby
-                  <span>always post upcoming gigs on insta</span>
+                  <span>instagram</span>
                 </h1>
               </Link>
             </motion.li>
@@ -188,7 +188,7 @@ export default function Home({ posts }) {
             <motion.li variants={fadeInUp}>
               <Link href="mailto:itsguppybaby@gmail.com">
                 <h1
-                  className="text-[#ff8bf2] hover:bg-[#ff8bf2]
+                  className="text-[#fffb8b] hover:bg-[#fffb8b]
                  text-3xl md:text-[5vw]"
                 >
                   itsguppybaby@gmail.com
@@ -221,12 +221,12 @@ export default function Home({ posts }) {
             <motion.li variants={fadeInUp}>
               <Link href="/stewmagshoot">
                 <h1 className="text-[pink] hover:bg-[pink] text-[5em] md:text-[10vw]">
-                  🕊<span>press shots hurrr</span>
+                  🕊<span>sxc pics</span>
                 </h1>
               </Link>
             </motion.li>
 
-            <motion.li variants={fadeInUp}>
+            {/* <motion.li variants={fadeInUp}>
               <Link
                 href="https://colossusrecords.square.site/product/verity-whisper-guppy-7-split-vinyl/14?cp=true&sa=true&sbp=false&q=false"
                 target="_blank"
@@ -238,7 +238,7 @@ export default function Home({ posts }) {
                   </span>
                 </h1>
               </Link>
-            </motion.li>
+            </motion.li> */}
 
             <motion.li
               variants={fadeInUp}
