@@ -33,7 +33,7 @@ export default function BreakTheInternet() {
 
         <main className="page">
           <h1 className="text-[#800000]">
-            brb breaking the internet<span>crowbar set</span>
+            breaks the internet<span>crowbar set</span>
           </h1>
           <article>
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>

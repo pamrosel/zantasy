@@ -59,7 +59,7 @@ export default function Home({ posts }) {
             <motion.li variants={fadeInUp}>
               <Link href="/breakstheinternet">
                 <h1 className="text-[#25fffb] hover:bg-[#25fffb]">
-                  brb breaking the internet<span>crowbar set</span>
+                  breaks the internet<span>crowbar set</span>
                 </h1>
               </Link>
             </motion.li>
@@ -121,7 +121,7 @@ export default function Home({ posts }) {
             <motion.li variants={fadeInUp}>
               <Link href="/777antasy">
                 <h1 className="text-[#4a4dff] hover:bg-[#4a4dff]">
-                  777antasy LP<span>listen/buy/spotify</span>
+                  777antasy<span>LP/listen</span>
                 </h1>
               </Link>
             </motion.li>
@@ -192,7 +192,6 @@ export default function Home({ posts }) {
                  text-3xl md:text-[5vw]"
                 >
                   itsguppybaby@gmail.com
-                  <span>email us here</span>
                 </h1>
               </Link>
             </motion.li>
