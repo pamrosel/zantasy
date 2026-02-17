@@ -59,7 +59,7 @@ export default function Home({ posts }) {
             <motion.li variants={fadeInUp}>
               <Link href="/breakstheinternet">
                 <h1 className="text-[#25fffb] hover:bg-[#25fffb]">
-                  breaks the internet<span>crowbar set</span>
+                  breakthe internet<span>crowbar set</span>
                 </h1>
               </Link>
             </motion.li>
@@ -85,12 +85,6 @@ export default function Home({ posts }) {
                     height={800}
                   />
                 </div>
-              </Link>
-            </motion.li> */}
-
-            {/* <motion.li variants={fadeInUp}>
-              <Link href="/nagnagnagset">
-                <h1 className='text-[#e2ff81] hover:bg-[#e2ff81]'>🏕️ Camp a Low Hum<span>we're going to nz!</span></h1>
               </Link>
             </motion.li> */}
 
@@ -208,6 +202,19 @@ export default function Home({ posts }) {
               <Link href="/thunderunderthemud">
                 <h1 className="text-[#7bffb0] hover:bg-[#7bffb0]">
                   Thunder Under the Mud<span>clip</span>
+                </h1>
+              </Link>
+            </motion.li>
+
+            <motion.li variants={fadeInUp}>
+              <Link
+                href="https://spamdigital.com/?utm_source=guppy&utm_medium=referral"
+                target="_blank"
+                rel="noopener"
+                aria-label="Visit Spam Digital, the designer and developer of this site"
+              >
+                <h1 className="text-[#b2ff7b] hover:bg-[#b2ff7b] text-sm">
+                  site by spam digital
                 </h1>
               </Link>
             </motion.li>
